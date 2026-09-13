@@ -24,31 +24,21 @@
       </item>
     
       <item>
-        <title>关于git命令推送</title>
-        <description>&lt;p&gt;● 创建一个文件夹&lt;br /&gt; ● 进入文件夹，鼠标右键，打开 Git Bash Here&lt;br /&gt; ● 执行命令：git init&lt;br /&gt; ● 随便创建个文件，写点代码&lt;br /&gt; ● 让Git记住此时代码是什么样：&lt;br /&gt; ○ git add .&lt;br /&gt; ○ git commit -m ‘说明文字’&lt;br /&gt; ● 随便修改一点代码&lt;br /&gt; ○ git add .&lt;br /&gt; ○ git commit -m ‘说明文字’&lt;br /&gt; ● 随便修改一点代码，或新增一些文件，或删除一些文件&lt;br /&gt; ○ git add .&lt;br /&gt; ○ git commit -m ‘说明文字’&lt;br /&gt; ● 执行 git log –oneline 查看你记录了几个版本了，方便看到版本号&lt;br /&gt; ● 尝试执行 git reset –hard 版本号，将代码切换到历史版本4&lt;br /&gt;&lt;/p&gt; &lt;p&gt;添加远程地址：&lt;br /&gt; ● git remote add 别名 仓库地址&lt;br /&gt; 移除远程地址：&lt;br /&gt; ● git remote remove 别名&lt;br /&gt; 查看远程地址：&lt;br /&gt; ● git remote -v&lt;br /&gt;&lt;/p&gt; &lt;h2 id=&quot;查看分支&quot;&gt;查看分支&lt;br /&gt;&lt;/h2&gt; &lt;p&gt;git...</description>
-        <pubDate>Sun, 22 Nov 2020 12:26:40 +0000</pubDate>
+        <title>计算机毕业设计选题与开题全流程指南</title>
+        <description>围绕计算机毕业设计的选题原则、功能设计、技术选型和开题报告，整理一套可执行的准备流程。</description>
+        <pubDate>Sun, 13 Sep 2026 01:00:00 +0000</pubDate>
         <link>/why-books-should-be-your-priority/</link>
         <guid isPermaLink="true">/why-books-should-be-your-priority/</guid>
-        
-        <category>books</category>
-        
-        <category>read</category>
-        
-        <category>git命令推送送</category>
+        <category>毕业设计</category>
       </item>
     
       <item>
-        <title>ES6模块化和webpack</title>
-        <description>&lt;h1 id=&quot;模块化介绍&quot;&gt;模块化介绍&lt;/h1&gt; &lt;h2 id=&quot;什么是模块化&quot;&gt;什么是模块化&lt;/h2&gt; &lt;p&gt;模块化，就是把一个大的文件拆分成若干小文件，而且还能把小文件通过特定的语法组合到一起的实现过程。&lt;br /&gt;比如手机、电脑….等等几乎所有，都是模块化的设计，拿电脑来说，可以把电脑拆分成显示器、键盘、硬盘、内存等一个一个的小模块，当然也能够组装到一起。&lt;/p&gt; &lt;h2 id=&quot;优点&quot;&gt;优点&lt;/h2&gt; &lt;p&gt;模块化的优势：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;更利于维护（比如电脑屏幕坏了，只换屏幕就可以了；比如想升级显卡，只换显卡就行了）；&lt;/li&gt; &lt;li&gt;更好的复用性（比如有一块移动硬盘或U盘，大家都能用）&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Node中，规定每个JS文件都是一个小模块。一个项目由许许多多的小模块（JS文件）组合而成。&lt;br /&gt;Node中模块化的优势：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;更利于维护（比如，项目需要对登录模块升级，则不会影响其他模块）&lt;/li&gt; &lt;li&gt;更好的复用性（比如有一个公共的函数，封装起来。其他所有JS文件都能使用这个函数）&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;前端模块化的分类-了解&quot;&gt;前端模块化的分类 (了解)&lt;/h2&gt; &lt;p&gt;实现模块化的语法不止一种。&lt;br /&gt;在 ES6 模块化规范诞生之前，JavaScript 社区已经尝试并提出了 &lt;strong&gt;AMD (国外 requirejs)、CMD (国内 seajs 淘宝)、CommonJS (nodejs)&lt;/strong&gt; 等模块化规范&lt;br /&gt;但是，这些由社区提出的模块化标准，还是存在一定的差异性与局限性、并不是浏览器与服务器通用的模块化标准&lt;br /&gt;例如:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;AMD 和 CMD 适用于浏览器端的 Javascript 模块化&lt;/li&gt; &lt;li&gt;CommonJS 适用于服务器端的 Javascript 模块化&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;太多的模块化规范给开发者增加了学习的难度与开发的成本。因此，大一统的  &lt;strong&gt;ES6 模块化（ES Module）&lt;/strong&gt;  规范诞生了！&lt;/p&gt; &lt;h1 id=&quot;es6模块化&quot;&gt;ES6模块化&lt;/h1&gt; &lt;h2 id=&quot;node环境使用es6模块化的要求&quot;&gt;Node环境使用ES6模块化的要求&lt;/h2&gt; &lt;p&gt;node.js 中默认仅支持 CommonJS 模块化规范，若想基于 node.js 体验与学习 ES6 的模块化语法，可以按照&lt;br /&gt;如下两个步骤进行配置：&lt;/p&gt; &lt;ol&gt; &lt;li&gt;确保安装了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v13.0.0&lt;/code&gt; 或更高版本的 node.js&lt;/li&gt; &lt;li&gt;在 package.json 的根节点中添加 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;type&quot;: &quot;module&quot;&lt;/code&gt; 节点&lt;/li&gt; &lt;/ol&gt; &lt;ul&gt; &lt;li&gt;type，默认是commonjs，表示项目代码 &lt;strong&gt;只能&lt;/strong&gt; 使用 CommonJS 语法（只能使用 module.exports 导出，使用require导入）&lt;/li&gt; &lt;li&gt;type 配置为 “module” 之后，表示项目代码 &lt;strong&gt;只能&lt;/strong&gt; 使用 ES6模块化语法&lt;/li&gt; &lt;/ul&gt; &lt;h2...</description>
-        <pubDate>Fri, 09 Oct 2020 12:26:40 +0000</pubDate>
+        <title>毕业论文写作、查重与答辩准备指南</title>
+        <description>从论文结构、写作顺序、查重降重到答辩 PPT 和常见问题，整理毕业论文与答辩的完整准备清单。</description>
+        <pubDate>Sat, 12 Sep 2026 01:00:00 +0000</pubDate>
         <link>/the-quick-brown-fox-jumps-over-a-lazy-dog/</link>
         <guid isPermaLink="true">/the-quick-brown-fox-jumps-over-a-lazy-dog/</guid>
-        
-        <category>ES6</category>
-        
-        <category>tips</category>
-        
-        <category>ES6模块化和webpack</category>
+        <category>论文写作</category>
       </item>
     
       <item>
