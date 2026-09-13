@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    <title>JS基础面试题 | 李梓涵</title>
+    <meta name="description" content="40道JS基础面试题">
+    
+        <meta name="keywords" content="languages, tips">
+    
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JS基础面试题 | 李梓涵">
+    <meta name="twitter:description" content="40道JS基础面试题">
+
+    
+        <meta property="twitter:image" content="https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme1_eoyjtl.jpg">
+    
+    
+    
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="/trust-me-it-will-work/">
+    <meta property="og:title" content="JS基础面试题 | 李梓涵">
+    <meta property="og:image" content="https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme1_eoyjtl.jpg">
+    <meta property="og:description" content="40道JS基础面试题">
+    <meta property="og:site_name" content="李梓涵的个人博客">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="李梓涵">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="msapplication-square70x70logo" content="smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="widetile.png" />
+    <meta name="msapplication-square310x310logo" content="largetile.png" />
+    
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="#141414">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="canonical" href="/trust-me-it-will-work/">
+    <link rel="alternate" type="application/rss+xml" title="李梓涵的个人博客" href="/feed.xml" />
+
+    <!-- Include extra styles -->
+    
+
+    <!-- JavaScript enabled/disabled -->
+    <script>
+        document.querySelector('html').classList.remove('no-js');
+    </script>
+</head>
+
+    <body class="has-push-menu">
+        
+
+
+
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none" version="1.1"><defs><symbol id="icon-menu" viewBox="0 0 1024 1024"><path class="path1" d="M128 213.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 725.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 469.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5z"/></symbol><symbol id="icon-search" viewBox="0 0 951 1024"><path class="path1" d="M658.286 475.429q0-105.714-75.143-180.857t-180.857-75.143-180.857 75.143-75.143 180.857 75.143 180.857 180.857 75.143 180.857-75.143 75.143-180.857zM950.857 950.857q0 29.714-21.714 51.429t-51.429 21.714q-30.857 0-51.429-21.714l-196-195.429q-102.286 70.857-228 70.857-81.714 0-156.286-31.714t-128.571-85.714-85.714-128.571-31.714-156.286 31.714-156.286 85.714-128.571 128.571-85.714 156.286-31.714 156.286 31.714 128.571 85.714 85.714 128.571 31.714 156.286q0 125.714-70.857 228l196 196q21.143 21.143 21.143 51.429z"/></symbol><symbol id="icon-close" viewBox="0 0 1000 1000"><path d="M969.8,870.3c27,27.7,27,71.8,0,99.1C955.7,983,937.9,990,920,990c-17.9,0-35.7-7-49.7-20.7L500,599L129.6,969.4C115.6,983,97.8,990,79.9,990s-35.7-7-49.7-20.7c-27-27.3-27-71.4,0-99.1L400.9,500L30.3,129.3c-27-27.3-27-71.4,0-99.1c27.3-27,71.8-27,99.4,0L500,400.9L870.4,30.2c27.7-27,71.8-27,99.4,0c27,27.7,27,71.8,0,99.1L599.1,500L969.8,870.3z"/></symbol><symbol id="icon-twitter" viewBox="0 0 951 1024"><path class="path1" d="M925.714 233.143q-38.286 56-92.571 95.429 0.571 8 0.571 24 0 74.286-21.714 148.286t-66 142-105.429 120.286-147.429 83.429-184.571 31.143q-154.857 0-283.429-82.857 20 2.286 44.571 2.286 128.571 0 229.143-78.857-60-1.143-107.429-36.857t-65.143-91.143q18.857 2.857 34.857 2.857 24.571 0 48.571-6.286-64-13.143-106-63.714t-42-117.429v-2.286q38.857 21.714 83.429 23.429-37.714-25.143-60-65.714t-22.286-88q0-50.286 25.143-93.143 69.143 85.143 168.286 136.286t212.286 56.857q-4.571-21.714-4.571-42.286 0-76.571 54-130.571t130.571-54q80 0 134.857 58.286 62.286-12 117.143-44.571-21.143 65.714-81.143 101.714 53.143-5.714 106.286-28.571z"/></symbol><symbol id="icon-facebook" viewBox="0 0 585 1024"><path class="path1" d="M548 6.857v150.857h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571q0-106.286 59.429-164.857t158.286-58.571q84 0 130.286 6.857z"/></symbol><symbol id="icon-clock" viewBox="0 0 1000 1000"><path d="M500,10C229.8,10,10,229.8,10,500c0,270.2,219.8,490,490,490c270.2,0,490-219.8,490-490C990,229.8,770.2,10,500,10z M500,910.2c-226.2,0-410.2-184-410.2-410.2c0-226.2,184-410.2,410.2-410.2c226.2,0,410.2,184,410.2,410.2C910.2,726.1,726.2,910.2,500,910.2z M753.1,374c8.2,11.9,5.2,28.1-6.6,36.3L509.9,573.7c-4.4,3.1-9.6,4.6-14.8,4.6c-4.1,0-8.3-1-12.1-3c-8.6-4.5-14-13.4-14-23.1V202.5c0-14.4,11.7-26.1,26.1-26.1c14.4,0,26.1,11.7,26.1,26.1v300l195.6-135.1C728.7,359.2,744.9,362.1,753.1,374z"/></symbol><symbol id="icon-calendar" viewBox="0 0 1000 1000"><path d="M920,500v420H80V500H920 M990,430H10v490c0,38.7,31.3,70,70,70h840c38.7,0,70-31.3,70-70V430L990,430z"/><path d="M850,80v105c0,57.9-47.2,105-105,105c-58,0-105-47.1-105-105V80H360v105c0,57.9-47.2,105-105,105c-58,0-105-47.1-105-105V80C72.8,80,10,142.7,10,220v140h980V220C990,142.7,927.2,80,850,80z"/><path d="M255,10c-19.3,0-35,15.8-35,35v140c0,19.2,15.7,35,35,35c19.3,0,35-15.8,35-35V45C290,25.8,274.3,10,255,10z"/><path d="M745,10c-19.3,0-35,15.8-35,35v140c0,19.2,15.7,35,35,35c19.3,0,35-15.8,35-35V45C780,25.8,764.3,10,745,10z"/></symbol><symbol id="icon-github" viewBox="0 0 12 14"><path d="M6 1q1.633 0 3.012 0.805t2.184 2.184 0.805 3.012q0 1.961-1.145 3.527t-2.957 2.168q-0.211 0.039-0.312-0.055t-0.102-0.234q0-0.023 0.004-0.598t0.004-1.051q0-0.758-0.406-1.109 0.445-0.047 0.801-0.141t0.734-0.305 0.633-0.52 0.414-0.82 0.16-1.176q0-0.93-0.617-1.609 0.289-0.711-0.062-1.594-0.219-0.070-0.633 0.086t-0.719 0.344l-0.297 0.187q-0.727-0.203-1.5-0.203t-1.5 0.203q-0.125-0.086-0.332-0.211t-0.652-0.301-0.664-0.105q-0.352 0.883-0.062 1.594-0.617 0.68-0.617 1.609 0 0.664 0.16 1.172t0.41 0.82 0.629 0.523 0.734 0.305 0.801 0.141q-0.305 0.281-0.383 0.805-0.164 0.078-0.352 0.117t-0.445 0.039-0.512-0.168-0.434-0.488q-0.148-0.25-0.379-0.406t-0.387-0.187l-0.156-0.023q-0.164 0-0.227 0.035t-0.039 0.090 0.070 0.109 0.102 0.094l0.055 0.039q0.172 0.078 0.34 0.297t0.246 0.398l0.078 0.18q0.102 0.297 0.344 0.48t0.523 0.234 0.543 0.055 0.434-0.027l0.18-0.031q0 0.297 0.004 0.691t0.004 0.426q0 0.141-0.102 0.234t-0.312 0.055q-1.812-0.602-2.957-2.168t-1.145-3.527q0-1.633 0.805-3.012t2.184-2.184 3.012-0.805zM2.273 9.617q0.023-0.055-0.055-0.094-0.078-0.023-0.102 0.016-0.023 0.055 0.055 0.094 0.070 0.047 0.102-0.016zM2.516 9.883q0.055-0.039-0.016-0.125-0.078-0.070-0.125-0.023-0.055 0.039 0.016 0.125 0.078 0.078 0.125 0.023zM2.75 10.234q0.070-0.055 0-0.148-0.062-0.102-0.133-0.047-0.070 0.039 0 0.141t0.133 0.055zM3.078 10.562q0.062-0.062-0.031-0.148-0.094-0.094-0.156-0.023-0.070 0.062 0.031 0.148 0.094 0.094 0.156 0.023zM3.523 10.758q0.023-0.086-0.102-0.125-0.117-0.031-0.148 0.055t0.102 0.117q0.117 0.047 0.148-0.047zM4.016 10.797q0-0.102-0.133-0.086-0.125 0-0.125 0.086 0 0.102 0.133 0.086 0.125 0 0.125-0.086zM4.469 10.719q-0.016-0.086-0.141-0.070-0.125 0.023-0.109 0.117t0.141 0.062 0.109-0.109z"></path></symbol><symbol id="icon-medium" viewBox="0 0 1000 1000"><path d="M336.5,240.2v641.5c0,9.1-2.3,16.9-6.8,23.2s-11.2,9.6-20,9.6c-6.2,0-12.2-1.5-18-4.4L37.3,782.7c-7.7-3.6-14.1-9.8-19.4-18.3S10,747.4,10,739V115.5c0-7.3,1.8-13.5,5.5-18.6c3.6-5.1,8.9-7.7,15.9-7.7c5.1,0,13.1,2.7,24.1,8.2l279.5,140C335.9,238.6,336.5,239.5,336.5,240.2L336.5,240.2z M371.5,295.5l292,473.6l-292-145.5V295.5z M990,305.3v576.4c0,9.1-2.6,16.5-7.7,22.1c-5.1,5.7-12,8.5-20.8,8.5s-17.3-2.4-25.7-7.1L694.7,784.9L990,305.3z M988.4,239.7c0,1.1-46.8,77.6-140.3,229.4C754.6,621,699.8,709.8,683.8,735.7L470.5,389l177.2-288.2c6.2-10.2,15.7-15.3,28.4-15.3c5.1,0,9.8,1.1,14.2,3.3l295.9,147.7C987.6,237.1,988.4,238.2,988.4,239.7L988.4,239.7z"/></symbol><symbol id="icon-instagram" viewBox="0 0 489.84 489.84"><path d="M249.62,50.46c65.4,0,73.14.25,99,1.43C372.47,53,385.44,57,394.07,60.32a75.88,75.88,0,0,1,28.16,18.32,75.88,75.88,0,0,1,18.32,28.16c3.35,8.63,7.34,21.6,8.43,45.48,1.18,25.83,1.43,33.57,1.43,99s-0.25,73.14-1.43,99c-1.09,23.88-5.08,36.85-8.43,45.48a81.11,81.11,0,0,1-46.48,46.48c-8.63,3.35-21.6,7.34-45.48,8.43-25.82,1.18-33.57,1.43-99,1.43s-73.15-.25-99-1.43c-23.88-1.09-36.85-5.08-45.48-8.43A75.88,75.88,0,0,1,77,423.86,75.88,75.88,0,0,1,58.69,395.7c-3.35-8.63-7.34-21.6-8.43-45.48-1.18-25.83-1.43-33.57-1.43-99s0.25-73.14,1.43-99c1.09-23.88,5.08-36.85,8.43-45.48A75.88,75.88,0,0,1,77,78.64a75.88,75.88,0,0,1,28.16-18.32c8.63-3.35,21.6-7.34,45.48-8.43,25.83-1.18,33.57-1.43,99-1.43m0-44.13c-66.52,0-74.86.28-101,1.47s-43.87,5.33-59.45,11.38A120.06,120.06,0,0,0,45.81,47.44,120.06,120.06,0,0,0,17.56,90.82C11.5,106.4,7.36,124.2,6.17,150.27s-1.47,34.46-1.47,101,0.28,74.86,1.47,101,5.33,43.87,11.38,59.45a120.06,120.06,0,0,0,28.25,43.38,120.06,120.06,0,0,0,43.38,28.25c15.58,6.05,33.38,10.19,59.45,11.38s34.46,1.47,101,1.47,74.86-.28,101-1.47,43.87-5.33,59.45-11.38a125.24,125.24,0,0,0,71.63-71.63c6.05-15.58,10.19-33.38,11.38-59.45s1.47-34.46,1.47-101-0.28-74.86-1.47-101-5.33-43.87-11.38-59.45a120.06,120.06,0,0,0-28.25-43.38,120.06,120.06,0,0,0-43.38-28.25C394.47,13.13,376.67,9,350.6,7.8s-34.46-1.47-101-1.47h0Z" transform="translate(-4.7 -6.33)" /><path d="M249.62,125.48A125.77,125.77,0,1,0,375.39,251.25,125.77,125.77,0,0,0,249.62,125.48Zm0,207.41a81.64,81.64,0,1,1,81.64-81.64A81.64,81.64,0,0,1,249.62,332.89Z" transform="translate(-4.7 -6.33)"/><circle cx="375.66" cy="114.18" r="29.39" /></symbol><symbol id="icon-linkedin" viewBox="0 0 12 14"><path d="M2.727 4.883v7.742h-2.578v-7.742h2.578zM2.891 2.492q0.008 0.57-0.395 0.953t-1.059 0.383h-0.016q-0.641 0-1.031-0.383t-0.391-0.953q0-0.578 0.402-0.957t1.051-0.379 1.039 0.379 0.398 0.957zM12 8.187v4.437h-2.57v-4.141q0-0.82-0.316-1.285t-0.988-0.465q-0.492 0-0.824 0.27t-0.496 0.668q-0.086 0.234-0.086 0.633v4.32h-2.57q0.016-3.117 0.016-5.055t-0.008-2.313l-0.008-0.375h2.57v1.125h-0.016q0.156-0.25 0.32-0.438t0.441-0.406 0.68-0.34 0.895-0.121q1.336 0 2.148 0.887t0.813 2.598z"></path></symbol><symbol id="icon-heart" viewBox="0 0 34 30"><path d="M17,29.7 L16.4,29.2 C3.5,18.7 0,15 0,9 C0,4 4,0 9,0 C13.1,0 15.4,2.3 17,4.1 C18.6,2.3 20.9,0 25,0 C30,0 34,4 34,9 C34,15 30.5,18.7 17.6,29.2 L17,29.7 Z M9,2 C5.1,2 2,5.1 2,9 C2,14.1 5.2,17.5 17,27.1 C28.8,17.5 32,14.1 32,9 C32,5.1 28.9,2 25,2 C21.5,2 19.6,4.1 18.1,5.8 L17,7.1 L15.9,5.8 C14.4,4.1 12.5,2 9,2 Z" id="Shape"></path></symbol><symbol id="icon-arrow-right" viewBox="0 0 25.452 25.452"><path d="M4.471,24.929v-2.004l12.409-9.788c0.122-0.101,0.195-0.251,0.195-0.411c0-0.156-0.073-0.31-0.195-0.409L4.471,2.526V0.522c0-0.2,0.115-0.384,0.293-0.469c0.18-0.087,0.396-0.066,0.552,0.061l15.47,12.202c0.123,0.1,0.195,0.253,0.195,0.409c0,0.16-0.072,0.311-0.195,0.411L5.316,25.34c-0.155,0.125-0.372,0.147-0.552,0.061C4.586,25.315,4.471,25.13,4.471,24.929z"/></symbol><symbol id="icon-star" viewBox="0 0 48 48"><path fill="currentColor" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"/><path fill="#ffffff" d="M24,11l3.898,7.898l8.703,1.301l-6.301,6.102l1.5,8.699L24,30.898L16.199,35l1.5-8.699l-6.301-6.102  l8.703-1.301L24,11z"/></symbol><symbol id="icon-read" viewBox="0 0 32 32"><path fill="currentColor" d="M29,4H3C1.343,4,0,5.343,0,7v18c0,1.657,1.343,3,3,3h10c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1h10  c1.657,0,3-1.343,3-3V7C32,5.343,30.657,4,29,4z M29,5v20H18.708c-0.618,0-1.236,0.146-1.789,0.422l-0.419,0.21V5H29z M15.5,5  v20.632l-0.419-0.21C14.528,25.146,13.91,25,13.292,25H3V5H15.5z M31,25c0,1.103-0.897,2-2,2H18v1h-4v-1H3c-1.103,0-2-0.897-2-2V7  c0-0.737,0.405-1.375,1-1.722V25c0,0.552,0.448,1,1,1h10.292c0.466,0,0.925,0.108,1.342,0.317l0.919,0.46  c0.141,0.07,0.294,0.106,0.447,0.106c0.153,0,0.306-0.035,0.447-0.106l0.919-0.46C17.783,26.108,18.242,26,18.708,26H29  c0.552,0,1-0.448,1-1V5.278C30.595,5.625,31,6.263,31,7V25z M6,12.5C6,12.224,6.224,12,6.5,12h5c0.276,0,0.5,0.224,0.5,0.5  S11.776,13,11.5,13h-5C6.224,13,6,12.776,6,12.5z M6,14.5C6,14.224,6.224,14,6.5,14h5c0.276,0,0.5,0.224,0.5,0.5S11.776,15,11.5,15  h-5C6.224,15,6,14.776,6,14.5z M6,16.5C6,16.224,6.224,16,6.5,16h5c0.276,0,0.5,0.224,0.5,0.5S11.776,17,11.5,17h-5  C6.224,17,6,16.776,6,16.5z M20,12.5c0-0.276,0.224-0.5,0.5-0.5h5c0.276,0,0.5,0.224,0.5,0.5S25.776,13,25.5,13h-5  C20.224,13,20,12.776,20,12.5z M20,14.5c0-0.276,0.224-0.5,0.5-0.5h5c0.276,0,0.5,0.224,0.5,0.5S25.776,15,25.5,15h-5  C20.224,15,20,14.776,20,14.5z M20,16.5c0-0.276,0.224-0.5,0.5-0.5h5c0.276,0,0.5,0.224,0.5,0.5S25.776,17,25.5,17h-5  C20.224,17,20,16.776,20,16.5z"></path></symbol></defs></svg>
+
+        <header class="bar-header">
+    <a id="menu" role="button">
+        <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+    </a>
+    <h1 class="logo">
+        <a href="/">
+            
+                李梓涵 <span class="version">v3.1.2</span>
+            
+        </a>
+    </h1>
+    <a id="search" class="dosearch" role="button">
+        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
+    </a>
+    
+        <a href="https://github.com/thiagorossener/jekflix-template" class="get-theme" role="button">
+            Get this theme!
+        </a>
+    
+</header>
+
+<div id="mask" class="overlay"></div>
+
+<aside class="sidebar" id="sidebar">
+    <nav id="navigation">
+      <h2>Menu</h2>
+      <ul>
+  
+    
+      <li>
+        <a href="/">首页</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/about/">关于作者</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/contact">联系作者</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/feed.xml">源码</a>
+      </li>
+    
+  
+</ul>
+
+    </nav>
+</aside>
+
+<div class="search-wrapper">
+    <div class="search-form">
+        <input type="text" class="search-field" placeholder="Search">
+        <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+        <ul class="search-results search-list"></ul>
+    </div>
+</div>
+
+
+
+        <section class="post two-columns">
+            <article role="article" class="post-content">
+                <p class="post-info">
+                    
+                        <svg class="icon-calendar" id="date"><use xlink:href="#icon-calendar"></use></svg>
+                        <time class="date" datetime="2018-03-12T12:26:40+00:00">
+                            
+
+
+March 12, 2018
+
+                        </time>
+                    
+                    <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
+                    <span>12 min to read</span>
+                </p>
+                <h1 class="post-title">JS基础面试题</h1>
+                <p class="post-subtitle">40道JS基础面试题</p>
+
+                
+                    <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme1_eoyjtl.jpg" alt="Featured image" class="post-cover">
+                
+
+                <!-- Pagination links -->
+
+
+
+                <!-- Add your table of contents here -->
+
+
+                <p><a name="CQin7"></a></p>
+
+<h1 id="js基础">JS基础</h1>
+
+<p><a name="Gruog"></a></p>
+
+<h2 id="1js的数据类型有哪些">1、js的数据类型有哪些</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 简单数据类型: number string boolean undefined null symbol
+	复杂数据类型: object  function  array
+</code></pre></div></div>
+
+<p><a name="Zj01o"></a></p>
+
+<h2 id="2返回false的情况有哪些">2、返回false的情况有哪些</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 0  ""   null  false  NaN  undefined  不成立的表达式
+</code></pre></div></div>
+
+<p><a name="H1w0q"></a></p>
+
+<h2 id="3两个等号和三个等号的区别">3、两个等号和三个等号的区别</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="err">：</span><span class="o">==</span> <span class="nx">表示是相等</span><span class="err">，</span><span class="nx">只比较值</span><span class="err">。</span><span class="nx">在比较时</span><span class="err">，</span><span class="nx">会将两边的值转成相同类型的值</span><span class="err">，</span><span class="nx">然后比较</span><span class="err">。</span>
+   <span class="o">===</span> <span class="nx">表示是全等</span><span class="err">，</span><span class="nx">不仅比较值</span><span class="err">，</span><span class="nx">也比较类型</span>
+</code></pre></div></div>
+
+<p><a name="AxBD0"></a></p>
+
+<h2 id="4null和undefined的区别">4、null和undefined的区别</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="err">：</span><span class="kc">null</span> <span class="nx">表示空值</span> <span class="nx">没有获取到</span><span class="err">。</span><span class="k">typeof</span> <span class="kc">null</span> <span class="nx">返回</span><span class="dl">"</span><span class="s2">object</span><span class="dl">"</span>
+   <span class="kc">undefined</span> <span class="nx">表示未定义</span><span class="err">，</span><span class="nx">声明没有值</span><span class="err">。</span><span class="k">typeof</span> <span class="kc">undefined</span> <span class="nx">返回</span><span class="dl">"</span><span class="s2">undefined</span><span class="dl">"</span>
+</code></pre></div></div>
+
+<p><a name="LnACW"></a></p>
+
+<h2 id="5json字符串和js对象怎么相互转换序列化">5、JSON字符串和JS对象怎么相互转换（序列化）</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: JS对象转JSON字符串: JSON.stringify(对象)
+    JSON字符串转JS对象: JSON.parse(字符串)
+</code></pre></div></div>
+
+<p><a name="OqgLR"></a></p>
+
+<h2 id="6伪数组和真数组的区别">6、伪数组和真数组的区别</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">伪数组</span><span class="err">：</span>
+<span class="mi">1</span><span class="err">、</span><span class="nx">拥有length属性</span>
+<span class="mi">2</span><span class="err">、</span><span class="nx">不具有数组的方法</span>
+<span class="mi">3</span><span class="err">、</span><span class="nx">伪数组是一个Object</span><span class="err">，</span><span class="nx">真数组是Array</span>
+<span class="mi">4</span><span class="err">、</span><span class="nx">伪数组的长度不可变</span><span class="err">，</span><span class="nx">真数组的长度是可变的</span>
+</code></pre></div></div>
+
+<p><a name="Wt2ur"></a></p>
+
+<h2 id="7那些情况会得到伪数组">7、那些情况会得到伪数组</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="nx">参数</span> <span class="nx">arguments</span><span class="err">，</span>
+<span class="mi">2</span><span class="err">、</span><span class="nx">DOM</span> <span class="nx">对象列表</span><span class="err">（</span><span class="nx">比如通过</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTags</span> <span class="nx">得到的列表</span><span class="err">）、</span><span class="nx">childNodes也是伪数组</span>
+<span class="mi">3</span><span class="err">、</span><span class="nx">jQuery</span> <span class="nx">对象</span><span class="err">（</span><span class="nx">比如</span> <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">div</span><span class="dl">"</span><span class="p">)</span><span class="err">）</span>
+</code></pre></div></div>
+
+<p><a name="vWTHZ"></a></p>
+
+<h2 id="8伪数组怎么转换为真数组">8、伪数组怎么转换为真数组</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="kd">let</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">protype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">伪数组</span><span class="p">)</span>
+<span class="mi">2</span><span class="err">、</span><span class="kd">let</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="nx">伪数组</span><span class="p">),</span><span class="nx">ES6的新语法</span>
+<span class="mi">3</span><span class="err">、</span><span class="kd">let</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">伪数组</span><span class="p">]</span><span class="err">，</span><span class="nx">使用扩展运算符</span><span class="p">,</span><span class="nx">也是ES6的语法</span>
+</code></pre></div></div>
+
+<p><a name="ttrgE"></a></p>
+
+<h2 id="9letconstvar的区别">9、let、const、var的区别</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="nx">var声明变量存在提升</span><span class="err">（</span><span class="nx">提升当前作用域最顶端</span><span class="err">），</span><span class="nx">let和const是不存在变量提升的情况</span>
+<span class="mi">2</span><span class="err">、</span><span class="nx">var没有块级作用</span><span class="err">，</span><span class="nx">let和const存在块级作用域</span>
+<span class="mi">3</span><span class="err">、</span><span class="nx">var允许重复声明</span><span class="err">，</span><span class="nx">let和const在同一作用域不允许重复声明</span>
+<span class="mi">4</span><span class="err">、</span><span class="nx">var和let声明变量可以修改</span><span class="err">，</span><span class="nx">const是常量不能改变</span>
+</code></pre></div></div>
+
+<p><a name="M4U3p"></a></p>
+
+<h2 id="10for-in-和-for-of-的区别">10、for in 和 for of 的区别</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="k">for</span><span class="err">…</span><span class="nx">in是遍历数组</span><span class="err">、</span><span class="nx">对象的key</span>
+<span class="mi">2</span><span class="err">、</span><span class="k">for</span><span class="err">…</span><span class="nx">of是遍历数组的value</span>
+<span class="nx">例如</span><span class="err">：</span>
+<span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">];</span>
+<span class="mi">1</span><span class="err">）</span><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">key</span><span class="p">);</span>  <span class="c1">//0 1</span>
+<span class="p">}</span>
+<span class="mi">2</span><span class="err">）</span><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>  <span class="c1">//a b</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><a name="UevYJ"></a></p>
+
+<h2 id="11说下typeof返回的数据类型">11、说下typeof返回的数据类型</h2>
+
+<p><strong>回答：</strong><br />①：简单数据类型直接返回对应的英文，比如：number  string boolean undefined symbol等，特殊情况， null 返回 object<br />②：复杂数据类型返回 object， 函数返回的是 function</p>
+
+<p><a name="eb821d79"></a></p>
+
+<h2 id="12请说说你对作用域链的理解">12、请说说你对作用域链的理解？</h2>
+
+<p><strong>回答</strong>：<br />①：JavaScript中的作用域分为全局作用域、局部作用域、块作用域。多个嵌套的作用域形成作用域链。<br />②：作用域链描述了变量的查找机制，当在某个作用域中查找变量时，如果当前 作用域没有找到，则向上层作用域查找，上层没有，继续向上层查找，一直找到全局作用域。找到则使用该变量，没有找到则报错。
+<a name="bb9aa7e2"></a></p>
+
+<h2 id="13简单数据类型与复杂数据类型在内存上存储有什么区别">13、简单数据类型与复杂数据类型在内存上存储有什么区别？</h2>
+
+<p><strong>回答：</strong><br /> ①：基本类型主要为以下6种：Number、String、Boolean、Undefined、null、symbol</p>
+
+<ul>
+  <li>基本数据类型的值存储在 栈中</li>
+</ul>
+
+<p>②：引用类型  Object、Array、Function</p>
+
+<ul>
+  <li>引用类型的值存储于 堆中
+<a name="z7qcx"></a></li>
+</ul>
+
+<h1 id="三webapi">三、webapi</h1>
+
+<p><a name="T9g6k"></a></p>
+
+<h2 id="14localstoragesessionstorage和cookie的区别">14、localStorage、sessionStorage和cookie的区别</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 共同点: 都是保存在浏览器端，且同源的。
+	区别: 
+	1. 请求不同: 
+		cookie 数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。
+				sessionStorage 和 localStorage不会自动把数据发给服务器，仅在本地保存。
+	2. 存储大小限制也不同: 
+		cookie 数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。
+		sessionStorage 和 localStorage虽然也有存储大小的限制，但比cookie大得多，sessionStorage约5M、localStorage约5M 。
+	3. 数据有效期不同: 
+		 sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持； 
+		 localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；
+		 cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。 
+	4. 作用域不同:
+		sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；
+		localStorage在所有同源窗口中都是共享的；
+		cookie也是在所有同源窗口中都是共享的。
+</code></pre></div></div>
+
+<p><a name="5809d5c1"></a></p>
+
+<h2 id="15请说下什么是重绘和重排回流他们的区别是什么">15、请说下什么是重绘和重排（回流）？他们的区别是什么？</h2>
+
+<p><strong>回答：</strong><br /><strong>重排</strong>: 也叫做回流，当DOM元素影响了元素的几何属性（例如宽和高），浏览器需要重新计算元素的几何属性，同样其它元素的几何属性也会和位置也会因此受到影响。浏览器会使渲染树中受到影响的部分失效，并重新构造渲染树。这个过程称为“重排”。<br /><strong>重绘</strong>: 完成重排后，浏览器会重新绘制受影响的部分到屏幕上中，该过程称为“重绘”。<br /><strong>总结：</strong><br />当我们改变DOM的大小，增加删除都会导致重排，当给DOM元素改变颜色的时候，会导致重绘，重排一定会重绘，重绘不会重排。重排会影响性能，所以我们尽快能的减少重排的操作（这句话是重点）
+<a name="f96ccd71"></a></p>
+
+<h2 id="16事件流分为哪两个阶段">16、事件流分为哪两个阶段？</h2>
+
+<p>事件流是指事件传播的顺序，由事件捕获 =&gt; 目标事件 =&gt; 事件冒泡<br />所以事件流分为捕获和冒泡两个阶段。
+<a name="git8R"></a></p>
+
+<h2 id="17事件委托的实现原理如果获取当前触发的dom节点">17、事件委托的实现原理？如果获取当前触发的dom节点？</h2>
+
+<p>回答：<br />①：事件委托主要利用事件冒泡特性来实现的。<br />②：事件委托（事件委派）主要有2个使用场景：</p>
+
+<ul>
+  <li>如果有多个子元素，可以把事件注册给父元素，因为点击子元素，也会将事件冒泡到其父元素上，利用这个特点提高了性能。</li>
+  <li>给后来动态生成的元素绑定事件。因为动态生成的元素没有办法直接绑定事件，可以利用事件委托来绑定事件。</li>
+</ul>
+
+<p>使用 e.target 获取当前触发事件的元素。
+<a name="YAXcZ"></a></p>
+
+<h2 id="18如何阻止冒泡和默认行为">18、如何阻止冒泡和默认行为</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="p">:</span> <span class="nx">阻止冒泡和捕获</span>  <span class="nx">e</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">()</span>
+    <span class="nx">阻止默认行为</span>   <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>   <span class="k">return</span> <span class="kc">false</span>
+    <span class="nx">注意</span><span class="err">：</span><span class="nx">addEventListener注册的事件</span><span class="err">，</span><span class="nx">在高浏览器版本中</span><span class="err">，</span><span class="k">return</span> <span class="nx">false将没有效果</span><span class="err">，</span><span class="nx">必须要用事件对象</span>
+</code></pre></div></div>
+
+<p><a name="hPnPq"></a></p>
+
+<h2 id="19原生注册事件的方式有哪些区别是什么">19、原生注册事件的方式有哪些？区别是什么</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="p">:</span> <span class="nx">注册方式</span>
+		  <span class="mi">1</span><span class="p">.</span> <span class="nx">on</span> <span class="o">+</span> <span class="nx">事件名称</span>
+		  <span class="mi">2</span><span class="p">.</span> <span class="nx">addEventListener</span>
+		<span class="nx">区别</span><span class="p">:</span> 
+			<span class="mi">1</span><span class="p">.</span> <span class="nx">使用on注册事件</span><span class="p">,</span><span class="nx">同一个元素只能注册一个同类型事件</span><span class="p">,</span><span class="nx">否则会覆盖</span><span class="err">。</span>
+			<span class="mi">2</span><span class="p">.</span> <span class="nx">addEventListener可以注册同一事件多次</span><span class="p">,</span><span class="nx">不会被覆盖</span><span class="err">。</span>
+</code></pre></div></div>
+
+<p><a name="Cc7dL"></a></p>
+
+<h1 id="四js高级">四、JS高级</h1>
+
+<p><a name="J0Rw1"></a></p>
+
+<h2 id="20说说你对this的理解">20、说说你对this的理解</h2>
+
+<p><strong>回答：</strong><br />this是个关键字,它的指向和函数的调用方式有关， 初步的理解就是，<strong>this指向所在函数的调用者。</strong><br />1、 以函数形式调用时， this 永远都是 window<br />2、 以方法的形式调用时， this 是调用方法的对象<br />3、 以构造函数的形式调用时， this 是新创建的那个对象<br />4、 使用 call 和 apply 调用时， this 是指定的那个对象<br />5、 箭头函数： 箭头函数的 this 按照普通变量对待。比如把他当做 x 变量即可，然后按照作用域链找就行了。<br />6、全局中的this是window<br />7、事件处理函数，如果是普通的function函数，则this指向事件源。
+<a name="I4Xuw"></a></p>
+
+<h2 id="21new操作符做了什么">21、new操作符做了什么</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答:  1. 创建一个新对象
+	2. 函数内部的this指向这个对象
+	3. 执行函数体
+	4. 自动返回这个函数
+</code></pre></div></div>
+
+<p><a name="MOm92"></a></p>
+
+<h2 id="22什么是深拷贝什么是浅拷贝">22、什么是深拷贝什么是浅拷贝</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 浅拷贝: 拷贝对象的一层属性,如果对象里面还有对象,拷贝的是地址, 两者之间修改会有影响,适用于对象里面属性的值是简单数据类型的.
+    深拷贝: 拷贝对象的多层属性,如果对象里面还有对象,会继续拷贝,使用递归去实现.
+</code></pre></div></div>
+
+<p><a name="U2dsC"></a></p>
+
+<h2 id="23如何实现深拷贝和浅拷贝">23、如何实现深拷贝和浅拷贝</h2>
+
+<p>浅拷贝：<br />Object.assign()<br />{ …obj }<br />lodash 库的 clone() 方法<br />手写循环<br />深拷贝：<br />lodash 库的 cloneDeep() 方法<br />JSON.parse(JSON.stringify(被拷贝的对象)) – 有缺陷，不能拷贝函数<br />手写循环 + 递归
+<a name="fUzTv"></a></p>
+
+<h2 id="24如何用递归实现深拷贝">24、如何用递归实现深拷贝？</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">copy</span><span class="p">(</span><span class="nx">oldD</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">newD</span>  <span class="c1">// 新数据</span>
+    <span class="c1">// 需要判断oldD 何方数据类型？</span>
+    <span class="c1">// ************************************数组</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">oldD</span> <span class="k">instanceof</span> <span class="nb">Array</span><span class="p">){</span>
+      <span class="nx">newD</span> <span class="o">=</span> <span class="p">[]</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">oldD</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">oldD</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>  <span class="c1">// 每一项数据</span>
+        <span class="nx">val</span> <span class="o">=</span> <span class="nx">copy</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="c1">// val</span>
+        <span class="nx">newD</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// ***********************************对象</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">oldD</span> <span class="k">instanceof</span> <span class="nb">Object</span><span class="p">){</span>
+      <span class="nx">newD</span> <span class="o">=</span> <span class="p">{}</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">oldD</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">oldD</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>  <span class="c1">// 每一项数据，有可能又是简单数组</span>
+        <span class="nx">val</span> <span class="o">=</span> <span class="nx">copy</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span>  <span class="c1">// val不能直接赋值，需要经过copy</span>
+        <span class="nx">newD</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">val</span>  <span class="c1">// 添加键值对</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// ***********************************简单数据</span>
+    <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">newD</span> <span class="o">=</span> <span class="nx">oldD</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">newD</span> 
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<p><a name="U7Vwr"></a></p>
+
+<h2 id="25描述下垃圾回收机制">25、描述下垃圾回收机制？</h2>
+
+<p>首先:垃圾回收机制内部算法：引用计数 和 标记清除<br />接下来：</p>
+
+<ul>
+  <li>引用计数：把堆上对象能够访问次数记下来，如果发现某个对象计数为0，算法认为没有变量访问这个对象。该对象所占空间，判定是垃圾，进行回收！但是：如果两个对象相互引用，各自计数永远不会为0，不会判定为是垃圾，不会回收！所以：主流浏览器不再使用该算法！</li>
+  <li>标记清除：核心就是 从 使用对象次数  到 无法到达对象；只要是堆上对象无法访问，哪怕是对象相互引用，但是无法访问，算法对该对象标记为垃圾空间！
+<a name="XAm4g"></a></li>
+</ul>
+
+<h2 id="26对闭包是怎么理解的">26、对闭包是怎么理解的？</h2>
+
+<p>答：</p>
+
+<ul>
+  <li>基本形式：两个嵌套关系的函数,内部函数可以访问外部函数定义的局部变量，那么该变量与内部函数就构造了闭包的形式</li>
+  <li>优点：形成私有空间，避免全局变量的污染</li>
+  <li>缺点：持久化内存，导致内存泄露</li>
+  <li>解决：
+    <ul>
+      <li>1、尽快避免函数的嵌套，以及变量的引用</li>
+      <li>2、执行完的变量，可以赋值null，触发垃圾回收机制，进行回收释放内存
+<a name="fuii3"></a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="27什么是原型对象和原型链">27、什么是原型对象和原型链</h2>
+
+<p>答：<br />原型对象：每个构造函数都有prototype属性，这个属性的值是个对象，称之为原型对象！<br />原型链：对象都有__proto__属性,这个属性指向它的原型对象,原型对象也是对象,也有__proto__属性,指向原型对象的原型对象,这样一层一层形成的链式结构称为原型链.<br /></p>
+
+<p><a name="faLdZ"></a></p>
+
+<h2 id="28原型链有什么意义">28、原型链有什么意义？</h2>
+
+<p>总得来说：给实例化对象上调用方法或使用某个属性，提供查询机制！<br />具体查询：<br />先在实例化对象本身上去找该方法！<br />如果没有，去实例化对象的__proto__（原型对象上去找）<br />如果当前原型对象上还没有该方法，继续往原型对象上的原型对象上去找<br />如果还是没有找到，报错  对象.xxx is not function
+<a name="B60Mw"></a></p>
+
+<h2 id="29callapply和bind的区别">29、call、apply和bind的区别</h2>
+
+<p>答: <br />1、call和apply方法都可以调用函数,方法内的第一个参数可以修改this的指向<br />2、call方法可以有多个参数,除了第一个参数,其他参数作为实参传递给函数；apply方法最多有2个参数,第二个参数是个数组或伪数组,数组里面的每一项作为实参传递给函数<br />3. bind方法不能调用函数,它会创建一个副本函数,并且该新函数的this指向已经被改变！</p>
+
+<p><a name="yjFyJ"></a></p>
+
+<h2 id="30怎么理解函数的防抖和节流">30、怎么理解函数的防抖和节流</h2>
+
+<p>防抖：就是指触发事件后，<strong>在n秒后</strong>对应的函数会执行！如果<strong>在n秒中</strong>又触发了事件，则会重新计算函数执行时间。<br />节流：就是指连续触发事件，如果上一次触发的对应的执行函数没有执行完成，下一次触发是不会引起对应代码执行的
+<a name="JH8gH"></a></p>
+
+<h2 id="31es6-es10新增常用方法">31、es6-es10新增常用方法</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="p">:</span> 
+<span class="nx">es6</span><span class="p">:</span>
+<span class="mi">1</span><span class="err">、</span><span class="kd">let</span><span class="err">、</span><span class="kd">const</span>
+<span class="mi">2</span><span class="err">、</span><span class="nx">解构赋值</span>  <span class="kd">let</span> <span class="p">{</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="p">}</span> <span class="o">=</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">}</span>
+<span class="mi">3</span><span class="err">、</span><span class="nx">箭头函数</span>
+<span class="mi">4</span><span class="err">、</span><span class="nx">字符串模板</span>
+<span class="mi">5</span><span class="err">、</span><span class="nx">扩展运算符</span>
+<span class="mi">6</span><span class="err">、</span><span class="nx">数组方法</span><span class="err">：</span><span class="nx">map</span><span class="err">、</span><span class="nx">filter等等</span>
+<span class="mi">7</span><span class="err">、</span><span class="nx">类</span><span class="err">：</span><span class="nx">class关键字</span>
+<span class="mi">8</span><span class="err">、</span><span class="nx">promise</span>
+<span class="mi">9</span><span class="err">、</span><span class="nx">函数参数默认值</span> <span class="nx">fn</span><span class="p">(</span><span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{}</span>
+<span class="mi">10</span><span class="err">、</span><span class="nx">对象属性简写</span> <span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">a</span><span class="p">}</span>
+<span class="mi">11</span><span class="err">、</span><span class="nx">模块化</span><span class="err">：</span><span class="k">import</span><span class="o">--</span><span class="nx">引入</span><span class="err">、</span><span class="nx">exprot</span> <span class="k">default</span><span class="o">--</span><span class="nx">导出</span>
+
+<span class="nx">es7</span><span class="p">:</span>
+<span class="mi">1</span><span class="err">、</span><span class="nx">includes</span><span class="p">()</span><span class="nx">方法</span><span class="err">，</span><span class="nx">用来判断一个数组是否包含一个指定的值</span><span class="err">，</span><span class="nx">根据情况</span><span class="err">，</span><span class="nx">如果包含则返回true</span><span class="err">，</span><span class="nx">否则返回false</span><span class="err">。</span>
+
+<span class="nx">es8</span><span class="p">:</span>
+<span class="mi">1</span><span class="err">、</span><span class="k">async</span><span class="sr">/awai</span><span class="err">t
+</span>
+<span class="nx">es9</span><span class="err">：</span>
+<span class="mi">1</span><span class="err">、</span><span class="nb">Promise</span><span class="p">.</span><span class="k">finally</span><span class="p">()</span> <span class="nx">允许你指定最终的逻辑</span>
+
+<span class="nx">es10</span><span class="p">:</span>
+<span class="mi">1</span><span class="err">、</span><span class="nx">数组Array的flat</span><span class="p">()</span><span class="nx">和flatmap</span><span class="p">()</span>
+   <span class="nx">flat</span><span class="p">:</span><span class="nx">方法最基本的作用就是数组降维</span>
+      <span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]];</span>
+            <span class="nx">arr1</span><span class="p">.</span><span class="nx">flat</span><span class="p">();</span> 
+            <span class="c1">// [1, 2, 3, 4]</span>
+
+        <span class="kd">var</span> <span class="nx">arr3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]];</span>
+        <span class="nx">arr3</span><span class="p">.</span><span class="nx">flat</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+        <span class="c1">// [1, 2, 3, 4, 5, 6]</span>
+
+        <span class="c1">//使用 Infinity 作为深度，展开任意深度的嵌套数组</span>
+        <span class="nx">arr3</span><span class="p">.</span><span class="nx">flat</span><span class="p">(</span><span class="kc">Infinity</span><span class="p">);</span> 
+        <span class="c1">// [1, 2, 3, 4, 5, 6]</span>
+   <span class="nl">flatmap</span><span class="p">:</span><span class="nx">方法首先使用映射函数映射</span><span class="p">(</span><span class="nx">遍历</span><span class="p">)</span><span class="nx">每个元素</span><span class="err">，</span><span class="nx">然后将结果压缩成一个新数组</span>
+</code></pre></div></div>
+
+<p><a name="WHLKL"></a></p>
+
+<h2 id="32怎么理解同步和异步">32、怎么理解同步和异步</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="mi">1</span><span class="err">、</span><span class="nx">javascript是单线程</span><span class="err">。</span><span class="nx">单线程就意味着</span><span class="err">，</span><span class="nx">所有任务需要排队</span><span class="err">，</span><span class="nx">前一个任务结束</span><span class="err">，</span><span class="nx">才会执行后一个任务</span><span class="err">。</span><span class="nx">如果前一个任务耗时很长</span><span class="err">，</span><span class="nx">后一个任务就不得不一直等着</span><span class="err">。</span><span class="nx">于是就有一个概念</span><span class="err">——</span><span class="nx">任务队列</span><span class="err">。</span>
+	<span class="mi">2</span><span class="err">、</span><span class="nx">同步任务</span><span class="err">，</span><span class="nx">顾名思义</span><span class="err">，</span><span class="nx">就是立即执行的任务</span><span class="err">，</span><span class="nx">同步任务一般会直接进入到主线程中执行</span><span class="err">；</span><span class="nx">而异步任务</span><span class="err">，</span><span class="nx">就是异步执行的任务</span><span class="err">，</span><span class="nx">比如ajax网络请求</span><span class="err">，</span><span class="nx">setTimeout</span> <span class="nx">定时函数等都属于异步任务</span><span class="err">，</span><span class="nx">异步任务会通过任务队列</span><span class="p">(</span> <span class="nx">Event</span> <span class="nx">Queue</span> <span class="p">)</span><span class="nx">的机制来进行协调</span><span class="err">。</span>
+</code></pre></div></div>
+
+<p><a name="PU2bl"></a></p>
+
+<h2 id="33js的运行机制是什么">33、js的运行机制是什么</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="err">：</span><span class="nx">js是单线程执行的</span><span class="err">，</span><span class="nx">页面加载时</span><span class="err">，</span><span class="nx">会自上而下执行主线程上的同步任务</span><span class="err">，</span><span class="nx">当主线程代码执行完毕时</span><span class="err">，</span><span class="nx">才开始执行在任务队列中的异步任务</span><span class="err">。</span><span class="nx">具体如下</span>  
+    <span class="mi">1</span><span class="p">.</span><span class="nx">所有同步任务都在主线程上执行</span><span class="err">，</span><span class="nx">形成一个执行栈</span><span class="err">。</span>
+    <span class="mi">2</span><span class="p">.</span><span class="nx">主线程之外</span><span class="err">，</span><span class="nx">还存在一个</span><span class="dl">"</span><span class="s2">任务队列(eventloop队列或者消息队列)</span><span class="dl">"</span><span class="err">。</span><span class="nx">只要异步任务有了运行结果</span><span class="err">，</span><span class="nx">就在</span><span class="dl">"</span><span class="s2">任务队列</span><span class="dl">"</span><span class="nx">之中放置一个事件</span><span class="err">。</span>
+    <span class="mi">3</span><span class="p">.</span><span class="nx">一旦</span><span class="dl">"</span><span class="s2">执行栈</span><span class="dl">"</span><span class="nx">中的所有同步任务执行完毕</span><span class="err">，</span><span class="nx">系统就会读取</span><span class="dl">"</span><span class="s2">任务队列</span><span class="dl">"</span><span class="err">，</span><span class="nx">看看里面有哪些事件</span><span class="err">。</span><span class="nx">哪些对应的异步任务</span><span class="err">，</span><span class="nx">于是结束等待状态</span><span class="err">，</span><span class="nx">进入执行栈</span><span class="err">，</span><span class="nx">开始执行</span><span class="err">。</span>
+    <span class="mi">4</span><span class="p">.</span><span class="nx">主线程不断重复上面的第三步</span><span class="err">。</span>
+</code></pre></div></div>
+
+<p><a name="Sv3wy"></a></p>
+
+<h2 id="34怎么理解面向对象">34、怎么理解面向对象</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="err">：</span><span class="mi">1</span><span class="err">、</span><span class="nx">面向对象是一种软件开发的思想和面向过程是相对应的</span><span class="err">，</span><span class="nx">就是把程序看作一个对象</span><span class="err">，</span><span class="nx">将属性和方法封装其中</span><span class="err">，</span><span class="nx">以提高代码的灵活性</span><span class="err">、</span><span class="nx">复用性</span><span class="err">、</span><span class="nx">可扩展性</span><span class="err">。</span>
+  <span class="mi">2</span><span class="err">、</span><span class="nx">面向对象有三大特性</span><span class="err">：</span><span class="nx">封装</span><span class="err">、</span><span class="nx">继承</span><span class="err">、</span><span class="nx">多态</span><span class="err">。</span>
+       <span class="nx">封装</span><span class="err">：</span><span class="nx">把相关的信息</span><span class="err">（</span><span class="nx">无论数据或方法</span><span class="err">）</span><span class="nx">存储在对象中的能力</span>
+       <span class="nx">继承</span><span class="err">：</span><span class="nx">由另一个类</span><span class="err">（</span><span class="nx">或多个类</span><span class="err">）</span><span class="nx">得来类的属性和方法的能力</span>
+       <span class="nx">多态</span><span class="err">：</span><span class="nx">编写能以多种方法运行的函数或方法的能力</span>
+   <span class="mi">3</span><span class="err">、</span><span class="nx">js中对象是一个无序的数据集合或者也可以说是属性和方法的集合</span><span class="err">，</span><span class="nx">可以动态的添加属性可方法</span><span class="err">。</span>
+   <span class="mi">4</span><span class="err">、</span><span class="nx">js是基于对象</span><span class="err">，</span><span class="nx">但是也使用了嵌入了面向对象的思想</span><span class="err">，</span><span class="nx">可以实现继承和封装</span><span class="err">，</span><span class="nx">这样也可以提供代码的灵活性和复用性</span><span class="err">。</span>
+</code></pre></div></div>
+
+<p><a name="FjMXH"></a></p>
+
+<h2 id="35异步函数有哪些">35、异步函数有哪些</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">JavaScript</span> <span class="nx">中常见的异步函数有</span><span class="err">：</span><span class="nx">定时器</span><span class="err">，</span><span class="nx">事件和</span> <span class="nx">ajax</span> <span class="nx">等</span>
+</code></pre></div></div>
+
+<p><a name="uyS1z"></a></p>
+
+<h2 id="36数组如何进行降维扁平化">36、数组如何进行降维（扁平化）</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="nx">利用Array</span><span class="p">.</span><span class="nx">some方法判断数组中是否还存在数组</span><span class="err">，</span><span class="nx">es6展开运算符连接数组</span>
+       <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+        <span class="k">while</span> <span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">some</span><span class="p">(</span><span class="nx">item</span> <span class="o">=&gt;</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">item</span><span class="p">)))</span> <span class="p">{</span>
+            <span class="nx">arr</span> <span class="o">=</span> <span class="p">[].</span><span class="nx">concat</span><span class="p">(...</span><span class="nx">arr</span><span class="p">);</span>
+        <span class="p">}</span>
+<span class="mi">2</span><span class="err">、</span><span class="nx">使用数组的concat方法</span>
+<span class="err">　</span>   <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+     <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[]</span>
+     <span class="nx">result</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">concat</span><span class="p">.</span><span class="nx">apply</span><span class="p">([],</span> <span class="nx">arr</span><span class="p">)</span>
+
+<span class="mi">3</span><span class="err">、</span> <span class="nx">使用数组的concat方法和扩展运算符</span>
+    <span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+    <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="nx">result</span> <span class="o">=</span> <span class="p">[].</span><span class="nx">concat</span><span class="p">(...</span><span class="nx">arr</span><span class="p">)</span>
+        
+<span class="mi">4</span><span class="err">、</span><span class="nx">es6中的flat函数也可以实现数组的扁平化</span>
+    <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,[</span><span class="dl">'</span><span class="s1">中</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">文</span><span class="dl">'</span><span class="p">,[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,[</span><span class="mi">11</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">31</span><span class="p">]]]],</span><span class="mi">3</span><span class="p">];</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">flat</span><span class="p">(</span> <span class="kc">Infinity</span> <span class="p">)</span>
+    <span class="nx">注意</span><span class="err">：</span><span class="nx">flat方法的infinity属性</span><span class="err">，</span><span class="nx">可以实现多层数组的降维</span>
+</code></pre></div></div>
+
+<p><a name="CdI7S"></a></p>
+
+<h2 id="37什么是作用域链">37、什么是作用域链</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="mi">1</span><span class="err">、</span><span class="nx">作用域</span><span class="err">：</span><span class="nx">分全局作用域和局部作用域</span>
+    <span class="mi">2</span><span class="err">、</span><span class="nx">在访问一个变量时</span><span class="err">，</span><span class="nx">首先在当前作用域中找</span><span class="err">，</span><span class="nx">如果找不到再到外层作用域中找</span><span class="err">，</span><span class="nx">这样一层一层的查找</span><span class="err">，</span><span class="nx">就形成了作用域链</span><span class="err">。</span>
+    <span class="mi">3</span><span class="err">、</span><span class="nx">如果没有找到会返回undefined</span>
+</code></pre></div></div>
+
+<p><a name="xgAmb"></a></p>
+
+<h2 id="38数组去重的方式">38、数组去重的方式</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="nx">第一种方式</span><span class="err">：</span><span class="nx">利用indexof方法</span>
+  <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+  <span class="kd">let</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">if</span> <span class="p">(</span><span class="nx">newArr</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+       <span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+     <span class="p">}</span>
+  <span class="p">}</span>
+
+<span class="mi">2</span><span class="err">、</span><span class="nx">第二种方式</span><span class="err">：</span><span class="nx">sort</span><span class="p">()</span><span class="nx">方法</span>
+   <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+   <span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">()</span>
+   <span class="kd">let</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+   <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">!==</span> <span class="nx">newArr</span><span class="p">[</span><span class="nx">newArr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+       <span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+     <span class="p">}</span>
+   <span class="p">}</span>
+
+<span class="mi">3</span><span class="err">、</span><span class="nx">第四种方式</span><span class="err">：</span><span class="nx">利用ES6</span> <span class="nx">Set去重</span>
+ <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+ <span class="kd">let</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Set</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a name="PRr1E"></a></p>
+
+<h2 id="39斐波那契数列">39、斐波那契数列</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// 斐波那契数列</span>
+  <span class="kd">function</span> <span class="nx">fiB</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">||</span> <span class="nx">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">1</span>
+      <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">fn</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="nx">fn</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+   <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fiB</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p><a name="corXl"></a></p>
+
+<h2 id="40你能说说怎么理解事件循环机制的">40、你能说说怎么理解事件循环机制的？</h2>
+
+<p><strong>回答：</strong><br />1、JavaScript 是一门单线程语言. 单线程可能会出现阻塞的情况，所js分了同步任务和异步任务。<br />2、同步和异步任务分别进入不同的执行环境，同步的进入主线程，即主执行栈，异步的进入 任务队列。<br />3、主线程内的任务执行完毕为空，会去 任务队列 读取对应的任务，推入主线程执行。 上述过程的不断重复就是我们说的 Event Loop (事件循环)。</p>
+
+
+
+                <!-- Pagination links -->
+
+
+            </article>
+
+            
+                <aside class="see-also">
+                    <h2>See also</h2>
+                    <ul>
+                        
+                        
+                        
+                            <li>
+                                <a href="/welcome-to-the-desert-of-the-real/">
+                                    
+                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_crop,h_399,w_760/v1624834389/nature-connection_lp5s8h.jpg">
+                                    
+                                    <h3>欢迎来到李梓涵的个人博客</h3>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/why-books-should-be-your-priority/">
+                                    
+                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg">
+                                    
+                                    <h3>关于git命令推送</h3>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/the-quick-brown-fox-jumps-over-a-lazy-dog/">
+                                    
+                                        <img src="https://img0.baidu.com/it/u=385511469,3480835356&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281">
+                                    
+                                    <h3>ES6模块化和webpack</h3>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </aside>
+            
+
+        </section>
+
+        <!-- Add time bar only for pages without pagination -->
+        
+            <div class="time-bar" data-minutes="12">
+    <span class="time-completed"></span>
+    <span class="time-remaining"></span>
+    <div class="bar">
+        <span class="completed" style="width:0%;"></span>
+        <span class="remaining" style="width:100%;"></span>
+    </div>
+</div>
+
+            <div class="recommendation">
+    <div class="message">
+        <strong>Why don't you read something next?</strong>
+        <div>
+            <button>
+                <svg><use xlink:href="#icon-arrow-right"></use></svg>
+                <span>Go back to top</span>
+            </button>
+        </div>
+    </div>
+    
+    <a href="/candy-candies-candy/" class="post-preview">
+        <div class="image">
+            
+                <img src="https://img2.baidu.com/it/u=741352811,2667400721&fm=253&fmt=auto&app=138&f=PNG?w=812&h=500">
+            
+        </div>
+        <h3 class="title">Ajax和Node</h3>
+    </a>
+</div>
+
+        
+
+        <!-- Show modal if the post is the last one -->
+        
+
+        <!-- Show modal before user leaves the page -->
+        
+
+        <!-- Add your newsletter subscription form here -->
+
+        <section class="share">
+    <h3>Share</h3>
+    <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;40道JS基础面试题&quot;%20/trust-me-it-will-work/%20via%20&#64;&hashtags=languages,tips"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+    </a>
+    <a aria-label="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=/trust-me-it-will-work/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+    </a>
+</section>
+
+        
+
+  <section class="author">
+    <div class="details">
+      
+        <img class="img-rounded" src="/assets/img/uploads/profile.png" alt="李梓涵">
+      
+      <p class="def">Author</p>
+      <h3 class="name">
+        <a href="/authors/mranderson/">李梓涵</a>
+      </h3>
+      <p class="desc">Bulletproof hacker passionate about leather clothes.</p>
+      <p>
+        
+          <a href="https://github.com/AsaSkrip" title="Github">
+            <svg><use xlink:href="#icon-github"></use></svg>
+          </a>
+        
+        
+          <a href="https://www.facebook.com/facebook_username" title="Facebook">
+            <svg><use xlink:href="#icon-facebook"></use></svg>
+          </a>
+        
+        
+          <a href="https://twitter.com/twitter_username" title="Twitter">
+            <svg><use xlink:href="#icon-twitter"></use></svg>
+          </a>
+        
+        
+          <a href="https://medium.com/@medium_username" title="Medium">
+            <svg><use xlink:href="#icon-medium"></use></svg>
+          </a>
+        
+        
+          <a href="https://www.instagram.com/instagram_username" title="Instagram">
+            <svg><use xlink:href="#icon-instagram"></use></svg>
+          </a>
+        
+        
+          <a href="https://www.linkedin.com/in/linkedin_username" title="LinkedIn">
+            <svg><use xlink:href="#icon-linkedin"></use></svg>
+          </a>
+        
+      </p>
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+  
+  
+
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "李梓涵",
+      
+      "image": "/assets/img/uploads/profile.png",
+      
+      "jobTitle": "The One",
+      "url": "/authors/mranderson/",
+      "sameAs": [
+        "https://github.com/AsaSkrip","https://www.facebook.com/facebook_username","https://twitter.com/twitter_username","https://medium.com/@medium_username","https://www.instagram.com/instagram_username","https://www.linkedin.com/in/linkedin_username"
+      ]
+  }
+  </script>
+
+
+        
+
+<section class="comments">
+    <h3>Comments</h3>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+    var disqus_loaded = false;
+
+    function load_disqus()
+    {
+        disqus_loaded = true;
+        var disqus_shortname = 'disqus_username';
+        var disqus_title = '';
+        var disqus_url = '/trust-me-it-will-work/';
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        var ldr = document.getElementById('disqus_loader');
+    };
+    window.onscroll = function(e) {
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
+            //hit bottom of page
+            if (disqus_loaded==false)
+                load_disqus()
+        }
+    };
+</script>
+
+
+
+        <footer>
+    <p>
+      
+        <a href="https://github.com/AsaSkrip" title="Github">
+          <svg><use xlink:href="#icon-github"></use></svg>
+        </a>
+      
+      
+      
+      
+      
+      
+    </p>
+
+    <ul>
+  
+    
+      <li>
+        <a href="/">首页</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/about/">关于作者</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/contact">联系作者</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/feed.xml">源码</a>
+      </li>
+    
+  
+</ul>
+
+
+    <p>
+      <span>Jekflix</span> was made with <svg class="love"><use xlink:href="#icon-heart"></use></svg> by <a href="https://rossener.com" target="_blank" class="creator">Thiago Rossener</a>
+    </p>
+</footer>
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "李梓涵",
+  "description": "李梓涵是也一名非常优秀的前端开发工程师",
+  "url": "/",
+  "logo": {
+      "@type": "ImageObject",
+      "url": "/assets/img/icons/mediumtile.png",
+      "width": "600",
+      "height": "315"
+  },
+  "sameAs": [
+    "https://github.com/AsaSkrip"
+  ]
+}
+</script>
+
+<!-- Include the script that allows Netlify CMS login -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<!-- Include the website scripts -->
+<script src="/assets/js/scripts.min.js"></script>
+
+<!-- Include Google Analytics script -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+<script>
+  var host = window.location.hostname;
+  if (host != 'localhost') {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-XXXXXXXX-X');
+  }
+</script>
+  
+
+
+<!-- Include extra scripts -->
+
+
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "name": "JS基础面试题",
+            "headline": "40道JS基础面试题",
+            "description": "40道JS基础面试题",
+            "image": "https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme1_eoyjtl.jpg",
+            "url": "/trust-me-it-will-work/",
+            "articleBody": "
+
+JS基础
+
+
+
+1、js的数据类型有哪些
+
+答: 简单数据类型: number string boolean undefined null symbol
+	复杂数据类型: object  function  array
+
+
+
+
+2、返回false的情况有哪些
+
+答: 0  &quot;&quot;   null  false  NaN  undefined  不成立的表达式
+
+
+
+
+3、两个等号和三个等号的区别
+
+答：== 表示是相等，只比较值。在比较时，会将两边的值转成相同类型的值，然后比较。
+   === 表示是全等，不仅比较值，也比较类型
+
+
+
+
+4、null和undefined的区别
+
+答：null 表示空值 没有获取到。typeof null 返回&quot;object&quot;
+   undefined 表示未定义，声明没有值。typeof undefined 返回&quot;undefined&quot;
+
+
+
+
+5、JSON字符串和JS对象怎么相互转换（序列化）
+
+答: JS对象转JSON字符串: JSON.stringify(对象)
+    JSON字符串转JS对象: JSON.parse(字符串)
+
+
+
+
+6、伪数组和真数组的区别
+
+伪数组：
+1、拥有length属性
+2、不具有数组的方法
+3、伪数组是一个Object，真数组是Array
+4、伪数组的长度不可变，真数组的长度是可变的
+
+
+
+
+7、那些情况会得到伪数组
+
+1、参数 arguments，
+2、DOM 对象列表（比如通过 document.getElementsByTags 得到的列表）、childNodes也是伪数组
+3、jQuery 对象（比如 $(&quot;div&quot;)）
+
+
+
+
+8、伪数组怎么转换为真数组
+
+1、let newArr = Array.protype.slice.call(伪数组)
+2、let newArr = Array.from(伪数组),ES6的新语法
+3、let newArr = [...伪数组]，使用扩展运算符,也是ES6的语法
+
+
+
+
+9、let、const、var的区别
+
+1、var声明变量存在提升（提升当前作用域最顶端），let和const是不存在变量提升的情况
+2、var没有块级作用，let和const存在块级作用域
+3、var允许重复声明，let和const在同一作用域不允许重复声明
+4、var和let声明变量可以修改，const是常量不能改变
+
+
+
+
+10、for in 和 for of 的区别
+
+1、for…in是遍历数组、对象的key
+2、for…of是遍历数组的value
+例如：
+let arr = [&quot;a&quot;,&quot;b&quot;];
+1）for (let key in arr) {
+console.log(key);  //0 1
+}
+2）for (let value of arr) {
+console.log(value);  //a b
+}
+
+
+
+
+11、说下typeof返回的数据类型
+
+回答：①：简单数据类型直接返回对应的英文，比如：number  string boolean undefined symbol等，特殊情况， null 返回 object②：复杂数据类型返回 object， 函数返回的是 function
+
+
+
+12、请说说你对作用域链的理解？
+
+回答：①：JavaScript中的作用域分为全局作用域、局部作用域、块作用域。多个嵌套的作用域形成作用域链。②：作用域链描述了变量的查找机制，当在某个作用域中查找变量时，如果当前 作用域没有找到，则向上层作用域查找，上层没有，继续向上层查找，一直找到全局作用域。找到则使用该变量，没有找到则报错。
+
+
+13、简单数据类型与复杂数据类型在内存上存储有什么区别？
+
+回答： ①：基本类型主要为以下6种：Number、String、Boolean、Undefined、null、symbol
+
+
+  基本数据类型的值存储在 栈中
+
+
+②：引用类型  Object、Array、Function
+
+
+  引用类型的值存储于 堆中
+
+
+
+三、webapi
+
+
+
+14、localStorage、sessionStorage和cookie的区别
+
+答: 共同点: 都是保存在浏览器端，且同源的。
+	区别: 
+	1. 请求不同: 
+		cookie 数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。
+				sessionStorage 和 localStorage不会自动把数据发给服务器，仅在本地保存。
+	2. 存储大小限制也不同: 
+		cookie 数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。
+		sessionStorage 和 localStorage虽然也有存储大小的限制，但比cookie大得多，sessionStorage约5M、localStorage约5M 。
+	3. 数据有效期不同: 
+		 sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持； 
+		 localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；
+		 cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。 
+	4. 作用域不同:
+		sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；
+		localStorage在所有同源窗口中都是共享的；
+		cookie也是在所有同源窗口中都是共享的。
+
+
+
+
+15、请说下什么是重绘和重排（回流）？他们的区别是什么？
+
+回答：重排: 也叫做回流，当DOM元素影响了元素的几何属性（例如宽和高），浏览器需要重新计算元素的几何属性，同样其它元素的几何属性也会和位置也会因此受到影响。浏览器会使渲染树中受到影响的部分失效，并重新构造渲染树。这个过程称为“重排”。重绘: 完成重排后，浏览器会重新绘制受影响的部分到屏幕上中，该过程称为“重绘”。总结：当我们改变DOM的大小，增加删除都会导致重排，当给DOM元素改变颜色的时候，会导致重绘，重排一定会重绘，重绘不会重排。重排会影响性能，所以我们尽快能的减少重排的操作（这句话是重点）
+
+
+16、事件流分为哪两个阶段？
+
+事件流是指事件传播的顺序，由事件捕获 =&amp;gt; 目标事件 =&amp;gt; 事件冒泡所以事件流分为捕获和冒泡两个阶段。
+
+
+17、事件委托的实现原理？如果获取当前触发的dom节点？
+
+回答：①：事件委托主要利用事件冒泡特性来实现的。②：事件委托（事件委派）主要有2个使用场景：
+
+
+  如果有多个子元素，可以把事件注册给父元素，因为点击子元素，也会将事件冒泡到其父元素上，利用这个特点提高了性能。
+  给后来动态生成的元素绑定事件。因为动态生成的元素没有办法直接绑定事件，可以利用事件委托来绑定事件。
+
+
+使用 e.target 获取当前触发事件的元素。
+
+
+18、如何阻止冒泡和默认行为
+
+答: 阻止冒泡和捕获  e.stopPropagation()
+    阻止默认行为   e.preventDefault()   return false
+    注意：addEventListener注册的事件，在高浏览器版本中，return false将没有效果，必须要用事件对象
+
+
+
+
+19、原生注册事件的方式有哪些？区别是什么
+
+答: 注册方式
+		  1. on + 事件名称
+		  2. addEventListener
+		区别: 
+			1. 使用on注册事件,同一个元素只能注册一个同类型事件,否则会覆盖。
+			2. addEventListener可以注册同一事件多次,不会被覆盖。
+
+
+
+
+四、JS高级
+
+
+
+20、说说你对this的理解
+
+回答：this是个关键字,它的指向和函数的调用方式有关， 初步的理解就是，this指向所在函数的调用者。1、 以函数形式调用时， this 永远都是 window2、 以方法的形式调用时， this 是调用方法的对象3、 以构造函数的形式调用时， this 是新创建的那个对象4、 使用 call 和 apply 调用时， this 是指定的那个对象5、 箭头函数： 箭头函数的 this 按照普通变量对待。比如把他当做 x 变量即可，然后按照作用域链找就行了。6、全局中的this是window7、事件处理函数，如果是普通的function函数，则this指向事件源。
+
+
+21、new操作符做了什么
+
+答:  1. 创建一个新对象
+	2. 函数内部的this指向这个对象
+	3. 执行函数体
+	4. 自动返回这个函数
+
+
+
+
+22、什么是深拷贝什么是浅拷贝
+
+答: 浅拷贝: 拷贝对象的一层属性,如果对象里面还有对象,拷贝的是地址, 两者之间修改会有影响,适用于对象里面属性的值是简单数据类型的.
+    深拷贝: 拷贝对象的多层属性,如果对象里面还有对象,会继续拷贝,使用递归去实现.
+
+
+
+
+23、如何实现深拷贝和浅拷贝
+
+浅拷贝：Object.assign(){ …obj }lodash 库的 clone() 方法手写循环深拷贝：lodash 库的 cloneDeep() 方法JSON.parse(JSON.stringify(被拷贝的对象)) – 有缺陷，不能拷贝函数手写循环 + 递归
+
+
+24、如何用递归实现深拷贝？
+
+function copy(oldD) {
+    let newD  // 新数据
+    // 需要判断oldD 何方数据类型？
+    // ************************************数组
+    if(oldD instanceof Array){
+      newD = []
+      for (let i = 0; i &amp;lt; oldD.length; i++) {
+        let val = oldD[i]  // 每一项数据
+        val = copy(val) // val
+        newD.push(val)
+      }
+    }
+    // ***********************************对象
+    else if(oldD instanceof Object){
+      newD = {}
+      for (let key in oldD) {
+        let val = oldD[key]  // 每一项数据，有可能又是简单数组
+        val = copy(val)  // val不能直接赋值，需要经过copy
+        newD[key] = val  // 添加键值对
+      }
+    }
+    
+    // ***********************************简单数据
+    else {
+      newD = oldD
+    }
+    return newD 
+  }
+
+
+
+
+25、描述下垃圾回收机制？
+
+首先:垃圾回收机制内部算法：引用计数 和 标记清除接下来：
+
+
+  引用计数：把堆上对象能够访问次数记下来，如果发现某个对象计数为0，算法认为没有变量访问这个对象。该对象所占空间，判定是垃圾，进行回收！但是：如果两个对象相互引用，各自计数永远不会为0，不会判定为是垃圾，不会回收！所以：主流浏览器不再使用该算法！
+  标记清除：核心就是 从 使用对象次数  到 无法到达对象；只要是堆上对象无法访问，哪怕是对象相互引用，但是无法访问，算法对该对象标记为垃圾空间！
+
+
+
+26、对闭包是怎么理解的？
+
+答：
+
+
+  基本形式：两个嵌套关系的函数,内部函数可以访问外部函数定义的局部变量，那么该变量与内部函数就构造了闭包的形式
+  优点：形成私有空间，避免全局变量的污染
+  缺点：持久化内存，导致内存泄露
+  解决：
+    
+      1、尽快避免函数的嵌套，以及变量的引用
+      2、执行完的变量，可以赋值null，触发垃圾回收机制，进行回收释放内存
+
+    
+  
+
+
+27、什么是原型对象和原型链
+
+答：原型对象：每个构造函数都有prototype属性，这个属性的值是个对象，称之为原型对象！原型链：对象都有__proto__属性,这个属性指向它的原型对象,原型对象也是对象,也有__proto__属性,指向原型对象的原型对象,这样一层一层形成的链式结构称为原型链.
+
+
+
+28、原型链有什么意义？
+
+总得来说：给实例化对象上调用方法或使用某个属性，提供查询机制！具体查询：先在实例化对象本身上去找该方法！如果没有，去实例化对象的__proto__（原型对象上去找）如果当前原型对象上还没有该方法，继续往原型对象上的原型对象上去找如果还是没有找到，报错  对象.xxx is not function
+
+
+29、call、apply和bind的区别
+
+答: 1、call和apply方法都可以调用函数,方法内的第一个参数可以修改this的指向2、call方法可以有多个参数,除了第一个参数,其他参数作为实参传递给函数；apply方法最多有2个参数,第二个参数是个数组或伪数组,数组里面的每一项作为实参传递给函数3. bind方法不能调用函数,它会创建一个副本函数,并且该新函数的this指向已经被改变！
+
+
+
+30、怎么理解函数的防抖和节流
+
+防抖：就是指触发事件后，在n秒后对应的函数会执行！如果在n秒中又触发了事件，则会重新计算函数执行时间。节流：就是指连续触发事件，如果上一次触发的对应的执行函数没有执行完成，下一次触发是不会引起对应代码执行的
+
+
+31、es6-es10新增常用方法
+
+答: 
+es6:
+1、let、const
+2、解构赋值  let { a, b } = { a: 1, b: 2 }
+3、箭头函数
+4、字符串模板
+5、扩展运算符
+6、数组方法：map、filter等等
+7、类：class关键字
+8、promise
+9、函数参数默认值 fn(a = 1) {}
+10、对象属性简写 let a = 1; let obj = {a}
+11、模块化：import--引入、exprot default--导出
+
+es7:
+1、includes()方法，用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回true，否则返回false。
+
+es8:
+1、async/await
+
+es9：
+1、Promise.finally() 允许你指定最终的逻辑
+
+es10:
+1、数组Array的flat()和flatmap()
+   flat:方法最基本的作用就是数组降维
+      var arr1 = [1, 2, [3, 4]];
+            arr1.flat(); 
+            // [1, 2, 3, 4]
+
+        var arr3 = [1, 2, [3, 4, [5, 6]]];
+        arr3.flat(2);
+        // [1, 2, 3, 4, 5, 6]
+
+        //使用 Infinity 作为深度，展开任意深度的嵌套数组
+        arr3.flat(Infinity); 
+        // [1, 2, 3, 4, 5, 6]
+   flatmap:方法首先使用映射函数映射(遍历)每个元素，然后将结果压缩成一个新数组
+
+
+
+
+32、怎么理解同步和异步
+
+	1、javascript是单线程。单线程就意味着，所有任务需要排队，前一个任务结束，才会执行后一个任务。如果前一个任务耗时很长，后一个任务就不得不一直等着。于是就有一个概念——任务队列。
+	2、同步任务，顾名思义，就是立即执行的任务，同步任务一般会直接进入到主线程中执行；而异步任务，就是异步执行的任务，比如ajax网络请求，setTimeout 定时函数等都属于异步任务，异步任务会通过任务队列( Event Queue )的机制来进行协调。
+
+
+
+
+33、js的运行机制是什么
+
+答：js是单线程执行的，页面加载时，会自上而下执行主线程上的同步任务，当主线程代码执行完毕时，才开始执行在任务队列中的异步任务。具体如下  
+    1.所有同步任务都在主线程上执行，形成一个执行栈。
+    2.主线程之外，还存在一个&quot;任务队列(eventloop队列或者消息队列)&quot;。只要异步任务有了运行结果，就在&quot;任务队列&quot;之中放置一个事件。
+    3.一旦&quot;执行栈&quot;中的所有同步任务执行完毕，系统就会读取&quot;任务队列&quot;，看看里面有哪些事件。哪些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。
+    4.主线程不断重复上面的第三步。
+
+
+
+
+34、怎么理解面向对象
+
+答：1、面向对象是一种软件开发的思想和面向过程是相对应的，就是把程序看作一个对象，将属性和方法封装其中，以提高代码的灵活性、复用性、可扩展性。
+  2、面向对象有三大特性：封装、继承、多态。
+       封装：把相关的信息（无论数据或方法）存储在对象中的能力
+       继承：由另一个类（或多个类）得来类的属性和方法的能力
+       多态：编写能以多种方法运行的函数或方法的能力
+   3、js中对象是一个无序的数据集合或者也可以说是属性和方法的集合，可以动态的添加属性可方法。
+   4、js是基于对象，但是也使用了嵌入了面向对象的思想，可以实现继承和封装，这样也可以提供代码的灵活性和复用性。
+
+
+
+
+35、异步函数有哪些
+
+JavaScript 中常见的异步函数有：定时器，事件和 ajax 等
+
+
+
+
+36、数组如何进行降维（扁平化）
+
+1、利用Array.some方法判断数组中是否还存在数组，es6展开运算符连接数组
+       let arr = [1,2,[3,4]]
+        while (arr.some(item =&amp;gt; Array.isArray(item))) {
+            arr = [].concat(...arr);
+        }
+2、使用数组的concat方法
+　   let arr = [1,2,[3,4]]
+     let result = []
+     result = Array.prototype.concat.apply([], arr)
+
+3、 使用数组的concat方法和扩展运算符
+    var arr = [1,2,[3,4]]
+    var result = []
+    result = [].concat(...arr)
+        
+4、es6中的flat函数也可以实现数组的扁平化
+    let arr = [1,2,[&apos;a&apos;,&apos;b&apos;,[&apos;中&apos;,&apos;文&apos;,[1,2,3,[11,21,31]]]],3];
+    let result = arr.flat( Infinity )
+    注意：flat方法的infinity属性，可以实现多层数组的降维
+
+
+
+
+37、什么是作用域链
+
+	1、作用域：分全局作用域和局部作用域
+    2、在访问一个变量时，首先在当前作用域中找，如果找不到再到外层作用域中找，这样一层一层的查找，就形成了作用域链。
+    3、如果没有找到会返回undefined
+
+
+
+
+38、数组去重的方式
+
+1、第一种方式：利用indexof方法
+  let arr = [2, 8, 5, 0, 5, 2, 6, 7, 2]
+  let newArr = []
+  for (let i = 0; i &amp;lt; arr.length; i++) {
+     if (newArr.indexOf(arr[i]) === -1) {
+       newArr.push(arr[i])
+     }
+  }
+
+2、第二种方式：sort()方法
+   let arr = [2, 8, 5, 0, 5, 2, 6, 7, 2]
+   arr.sort()
+   let newArr = [arr[0]]
+   for (let i = 1; i &amp;lt; arr.length; i++) {
+     if (arr[i] !== newArr[newArr.length - 1]) {
+       newArr.push(arr[i])
+     }
+   }
+
+3、第四种方式：利用ES6 Set去重
+ let arr = [2, 8, 5, 0, 5, 2, 6, 7, 2, 8]
+ let newArr = new Set(arr)
+
+
+
+
+39、斐波那契数列
+
+  // 斐波那契数列
+  function fiB(n) {
+    if (n == 1 || n == 2) {
+        return 1
+      }
+        return fn(n - 1) + fn(n - 2)
+   }
+    console.log(fiB(10))
+
+
+
+
+40、你能说说怎么理解事件循环机制的？
+
+回答：1、JavaScript 是一门单线程语言. 单线程可能会出现阻塞的情况，所js分了同步任务和异步任务。2、同步和异步任务分别进入不同的执行环境，同步的进入主线程，即主执行栈，异步的进入 任务队列。3、主线程内的任务执行完毕为空，会去 任务队列 读取对应的任务，推入主线程执行。 上述过程的不断重复就是我们说的 Event Loop (事件循环)。
+
+",
+            "wordcount": "2165",
+            "inLanguage": "en",
+            "dateCreated": "2018-03-12/",
+            "datePublished": "2018-03-12/",
+            "dateModified": "2018-03-12/",
+            "author": {
+                "@type": "Person",
+                "name": "李梓涵",
+                
+                "image": "/assets/img/uploads/profile.png",
+                
+                "jobTitle": "The One",
+                "url": "/authors/mranderson/",
+                "sameAs": [
+                    "https://github.com/AsaSkrip","https://www.facebook.com/facebook_username","https://twitter.com/twitter_username","https://medium.com/@medium_username","https://www.instagram.com/instagram_username","https://www.linkedin.com/in/linkedin_username"
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "李梓涵",
+                "url": "/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "/assets/img/blog-image.png",
+                    "width": "600",
+                    "height": "315"
+                }
+            },
+            "mainEntityOfPage": "True",
+            "genre": "JS基础面试题",
+            "articleSection": "JS基础面试题",
+            "keywords": ["languages","tips"]
+        }
+        </script>
+    </body>
+</html>

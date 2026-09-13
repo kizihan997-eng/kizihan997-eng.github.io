@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>李梓涵的个人博客</title>
+    <description>李梓涵是也一名非常优秀的前端开发工程师</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 22 Mar 2026 13:05:25 +0000</pubDate>
+    <lastBuildDate>Sun, 22 Mar 2026 13:05:25 +0000</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>欢迎来到李梓涵的个人博客</title>
+        <description>&lt;h1 id=&quot;个人优势&quot;&gt;个人优势&lt;/h1&gt; &lt;p&gt;1.熟练掌握 vue 全家桶（vue-cli、vue-router、vuex)&lt;br /&gt; 2.熟悉微信小程序原生开发、uniapp 开发以及双token的使用；&lt;br /&gt; 3.熟练使用 MVVM，ElementUI，Vant，Bootstrop，ECharts 等常用开发框架及功能插件. 4.熟练使用 Webpack 打包工具、以及包管理工具 yarn、熟练使用 Git 进行项目管理项目；&lt;br /&gt; 5.熟练使用Vue3 ，能够运用在项目中提高项目的开发效率，增强开发体验&lt;br /&gt; 6.熟悉原型链和继承原理，对面向对象有一定的理解熟练使用响应式布局，移动端自适应布局&lt;br /&gt; 7.熟练使用 Ajax、axios 模板引擎和后端进行数据交互、实现动态染页面部分刷新&lt;br /&gt; 常用优化：公共组件封装复用，组件缓存，路由图片数据懒加载，webpack 打包压缩，防抖节流等&lt;/p&gt; &lt;h1 id=&quot;自我评价&quot;&gt;自我评价&lt;/h1&gt; &lt;p&gt;1.我是一名具备良好团队合作能力的前端开发工程师&lt;br /&gt; 2.在过去的项目中，我负责与设计团队紧密合作，将创意转化为用户友好的网页界面&lt;br /&gt; 3.我熟练掌握HTML、Css、JavaScript，并具备跨浏览器和响应式设计的经验&lt;br /&gt; 4.我注重细节，善于解决问题，并对学习新技术保持热情&lt;br /&gt; 5.我致力于提供高质量的代码和用户体验，以满足客户需求并推动产品的成功&lt;br /&gt;&lt;/p&gt; &lt;h1 id=&quot;项目经历&quot;&gt;项目经历&lt;/h1&gt; &lt;h2 id=&quot;理想社区后台管理系统pc端&quot;&gt;理想社区后台管理系统(PC端)&lt;/h2&gt; &lt;h2 id=&quot;技术栈&quot;&gt;技术栈&lt;/h2&gt; &lt;p&gt;Vue2、Vuex3、Vue-Router3、Webpack4、Axios、Echarts、ElementUI&lt;/p&gt; &lt;h2 id=&quot;项目介绍&quot;&gt;项目介绍：&lt;/h2&gt; &lt;p&gt;该项目用于某社区物业管理人员，用于关于小区管理的系统，项目内包含可视化大屏 ，统计物业费，停车费，一体杆，员工管理，权限分配等&lt;/p&gt; &lt;h2 id=&quot;负责模块&quot;&gt;负责模块：&lt;/h2&gt; &lt;p&gt;可视化大屏、权限分配、楼宇管理、企业管理、月卡管理、停车缴费&lt;/p&gt; &lt;h2 id=&quot;技术实现&quot;&gt;技术实现：&lt;/h2&gt; &lt;p&gt;1.接入 echarts 组件 实现数据的图表展示，解决接入过程中遇到的问题，完成大屏可视化&lt;br /&gt; 2.通过灵活的权限模型和动态页面元素渲染，成功实现了安全可控的系统访问控制&lt;br /&gt; 3.参与维护团队前端开发流程及代码规范，包括 commit 标准git 分支流程以及代码风格等&lt;br /&gt; 4.与相关后端开发进行设计评审，确认相关字段设计，完善契约文档。&lt;br /&gt; 5.使⽤ ES6 以及 promise 对 axios 进⾏封装,能够对数据进⾏异步的操作，让请求接⼝数据 ⼀⽬了然，方便后期维护和修改&lt;br /&gt; 6.封装 Axios 请求，对超时时间及请求拦截和响应拦截进行统一配置&lt;br /&gt; 7.利⽤ elementUI 组件库提供的⽅法来实现选项卡，分⻚，表格，表单等⼀些常⽤的功能&lt;br /&gt; 8.对项目进行上线前的优化，通过 cdn 的方式引入第三方依赖，减小包的体积&lt;br /&gt;&lt;/p&gt; &lt;h2 id=&quot;项目难点&quot;&gt;项目难点：&lt;/h2&gt; &lt;h4 id=&quot;权限控制根据不同的员工进入系统显示不同的对应权限菜单&quot;&gt;权限控制，根据不同的员工进入系统显示不同的对应权限菜单&lt;/h4&gt; &lt;p&gt;1.可以实现根据用户权限动态生成菜单，并进行权限控制。&lt;br /&gt; 2.在菜单生成的过程中，可以根据用户权限筛选出用户有权限访问的菜单项，并生成菜单。&lt;br...</description>
+        <pubDate>Tue, 16 May 2023 23:48:05 +0000</pubDate>
+        <link>/welcome-to-the-desert-of-the-real/</link>
+        <guid isPermaLink="true">/welcome-to-the-desert-of-the-real/</guid>
+        
+        <category>welcome</category>
+        
+        <category>blog</category>
+        
+        <category>blog</category>
+      </item>
+    
+      <item>
+        <title>关于git命令推送</title>
+        <description>&lt;p&gt;● 创建一个文件夹&lt;br /&gt; ● 进入文件夹，鼠标右键，打开 Git Bash Here&lt;br /&gt; ● 执行命令：git init&lt;br /&gt; ● 随便创建个文件，写点代码&lt;br /&gt; ● 让Git记住此时代码是什么样：&lt;br /&gt; ○ git add .&lt;br /&gt; ○ git commit -m ‘说明文字’&lt;br /&gt; ● 随便修改一点代码&lt;br /&gt; ○ git add .&lt;br /&gt; ○ git commit -m ‘说明文字’&lt;br /&gt; ● 随便修改一点代码，或新增一些文件，或删除一些文件&lt;br /&gt; ○ git add .&lt;br /&gt; ○ git commit -m ‘说明文字’&lt;br /&gt; ● 执行 git log –oneline 查看你记录了几个版本了，方便看到版本号&lt;br /&gt; ● 尝试执行 git reset –hard 版本号，将代码切换到历史版本4&lt;br /&gt;&lt;/p&gt; &lt;p&gt;添加远程地址：&lt;br /&gt; ● git remote add 别名 仓库地址&lt;br /&gt; 移除远程地址：&lt;br /&gt; ● git remote remove 别名&lt;br /&gt; 查看远程地址：&lt;br /&gt; ● git remote -v&lt;br /&gt;&lt;/p&gt; &lt;h2 id=&quot;查看分支&quot;&gt;查看分支&lt;br /&gt;&lt;/h2&gt; &lt;p&gt;git...</description>
+        <pubDate>Sun, 22 Nov 2020 12:26:40 +0000</pubDate>
+        <link>/why-books-should-be-your-priority/</link>
+        <guid isPermaLink="true">/why-books-should-be-your-priority/</guid>
+        
+        <category>books</category>
+        
+        <category>read</category>
+        
+        <category>git命令推送送</category>
+      </item>
+    
+      <item>
+        <title>ES6模块化和webpack</title>
+        <description>&lt;h1 id=&quot;模块化介绍&quot;&gt;模块化介绍&lt;/h1&gt; &lt;h2 id=&quot;什么是模块化&quot;&gt;什么是模块化&lt;/h2&gt; &lt;p&gt;模块化，就是把一个大的文件拆分成若干小文件，而且还能把小文件通过特定的语法组合到一起的实现过程。&lt;br /&gt;比如手机、电脑….等等几乎所有，都是模块化的设计，拿电脑来说，可以把电脑拆分成显示器、键盘、硬盘、内存等一个一个的小模块，当然也能够组装到一起。&lt;/p&gt; &lt;h2 id=&quot;优点&quot;&gt;优点&lt;/h2&gt; &lt;p&gt;模块化的优势：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;更利于维护（比如电脑屏幕坏了，只换屏幕就可以了；比如想升级显卡，只换显卡就行了）；&lt;/li&gt; &lt;li&gt;更好的复用性（比如有一块移动硬盘或U盘，大家都能用）&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Node中，规定每个JS文件都是一个小模块。一个项目由许许多多的小模块（JS文件）组合而成。&lt;br /&gt;Node中模块化的优势：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;更利于维护（比如，项目需要对登录模块升级，则不会影响其他模块）&lt;/li&gt; &lt;li&gt;更好的复用性（比如有一个公共的函数，封装起来。其他所有JS文件都能使用这个函数）&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;前端模块化的分类-了解&quot;&gt;前端模块化的分类 (了解)&lt;/h2&gt; &lt;p&gt;实现模块化的语法不止一种。&lt;br /&gt;在 ES6 模块化规范诞生之前，JavaScript 社区已经尝试并提出了 &lt;strong&gt;AMD (国外 requirejs)、CMD (国内 seajs 淘宝)、CommonJS (nodejs)&lt;/strong&gt; 等模块化规范&lt;br /&gt;但是，这些由社区提出的模块化标准，还是存在一定的差异性与局限性、并不是浏览器与服务器通用的模块化标准&lt;br /&gt;例如:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;AMD 和 CMD 适用于浏览器端的 Javascript 模块化&lt;/li&gt; &lt;li&gt;CommonJS 适用于服务器端的 Javascript 模块化&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;太多的模块化规范给开发者增加了学习的难度与开发的成本。因此，大一统的  &lt;strong&gt;ES6 模块化（ES Module）&lt;/strong&gt;  规范诞生了！&lt;/p&gt; &lt;h1 id=&quot;es6模块化&quot;&gt;ES6模块化&lt;/h1&gt; &lt;h2 id=&quot;node环境使用es6模块化的要求&quot;&gt;Node环境使用ES6模块化的要求&lt;/h2&gt; &lt;p&gt;node.js 中默认仅支持 CommonJS 模块化规范，若想基于 node.js 体验与学习 ES6 的模块化语法，可以按照&lt;br /&gt;如下两个步骤进行配置：&lt;/p&gt; &lt;ol&gt; &lt;li&gt;确保安装了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v13.0.0&lt;/code&gt; 或更高版本的 node.js&lt;/li&gt; &lt;li&gt;在 package.json 的根节点中添加 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;type&quot;: &quot;module&quot;&lt;/code&gt; 节点&lt;/li&gt; &lt;/ol&gt; &lt;ul&gt; &lt;li&gt;type，默认是commonjs，表示项目代码 &lt;strong&gt;只能&lt;/strong&gt; 使用 CommonJS 语法（只能使用 module.exports 导出，使用require导入）&lt;/li&gt; &lt;li&gt;type 配置为 “module” 之后，表示项目代码 &lt;strong&gt;只能&lt;/strong&gt; 使用 ES6模块化语法&lt;/li&gt; &lt;/ul&gt; &lt;h2...</description>
+        <pubDate>Fri, 09 Oct 2020 12:26:40 +0000</pubDate>
+        <link>/the-quick-brown-fox-jumps-over-a-lazy-dog/</link>
+        <guid isPermaLink="true">/the-quick-brown-fox-jumps-over-a-lazy-dog/</guid>
+        
+        <category>ES6</category>
+        
+        <category>tips</category>
+        
+        <category>ES6模块化和webpack</category>
+      </item>
+    
+      <item>
+        <title>VUE基础面试题</title>
+        <description>&lt;h1 id=&quot;一路由&quot;&gt;一、路由&lt;/h1&gt; &lt;p&gt;&lt;a name=&quot;zgfYl&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;1vue-router-路由有哪些模式&quot;&gt;1、Vue-router 路由有哪些模式&lt;/h2&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;一般有两种模式&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;：&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;、&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hash&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;模式&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;：&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;后面的&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hash&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;值的变化&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;浏览器既不会向服务器发出请求&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;浏览器也不会刷新&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;每次&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hash&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;值的变化会触发&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hashchange&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;事件&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;。&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;、&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;模式&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;：&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;利用了&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HTML5&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;中新增的&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pushState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;和&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;replaceState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;方法&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;。&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;这两个方法应用于浏览器的历史记录栈&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;在当前已有的&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;back&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;、&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forward&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;、&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;go&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;的基础之上&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;它们提供了对历史记录进行修改的功能&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;。&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;只是当它们执行修改时&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;虽然改变了当前的&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;但浏览器不会立即向后端发送请求&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;。&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;hZR6b&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;2vue中route和router有什么区别&quot;&gt;2、vue中$route和$router有什么区别？&lt;/h2&gt; &lt;p&gt;this.$router 是 router 实例，也就是 router/index.js 中导出的那个对象，通过它可以调用 go、push&lt;strong&gt;等&lt;/strong&gt;方法进行页面跳转。&lt;br...</description>
+        <pubDate>Fri, 20 Jul 2018 12:26:40 +0000</pubDate>
+        <link>/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/</link>
+        <guid isPermaLink="true">/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/</guid>
+        
+        <category>VUE</category>
+        
+        <category>面试题</category>
+        
+        <category>VUE面试题</category>
+      </item>
+    
+      <item>
+        <title>Ajax和Node</title>
+        <description>&lt;h3 id=&quot;1http和https的区别&quot;&gt;1、http和https的区别&lt;/h3&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: 1.https协议需要到CA申请证书，一般免费证书较少，因而需要一定费用。 2.http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl/tls加密传输协议。 3.http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。 4.http的连接很简单，是无状态的；HTTPS协议是由SSL/TLS+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;c266e46c&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h3 id=&quot;2get-和post的区别&quot;&gt;2、get 和post的区别&lt;/h3&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: get 1. 在url后面拼接参数,只能以文本的形式传递数据 2. 传递的数据量小,4KB左右 3. 安全性低, 会将数据显示在地址栏 4. 速度快,通常用于安全性要求不高的请求 5. 会缓存数据 post 1. 安全性比较高 2. 传递数据量大,请求对数据长度没有要求 3. 请求不会被缓存,也不会保留在浏览器历史记录里 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;fdfecfe4&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h3 id=&quot;3项目中遇到的状态码有哪些&quot;&gt;3、项目中遇到的状态码有哪些&lt;/h3&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: 200 请求成功, 2开头的异步表示请求成功 304 请求被允许,但请求内容没有改变, 3开头的一般请求完成 400 请求格式错误, 4开头的一般表示请求错误 404 请求的资源(网页)不存在, 500 内部服务器错误, 5开头的一般都是指服务器错误 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;acbf56f1&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h3 id=&quot;4jsonp的原理以及优缺点&quot;&gt;4、jsonp的原理？以及优缺点&lt;/h3&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: 原理: 利用script标签的src属性具有天然可跨域的特性，由服务端返回一个预先定义好的Javascript函数的调用，并且将服务器数据以该函数参数的形式响应给浏览器. 优点: 完美解决在测试或者开发中获取不同域下的数据,用户传递一个callback参数给服务端，然后服务端返回数据时会将这个callback参数作为函数名来包裹住JSON数据，这样客户端就可以随意定制自己的函数来自动处理返回数据了。 缺点：Jsonp只支持get请求而不支持post 请求,也即是说如果想传给后台一个json 格式的数据,此时问题就来了, 浏览器会报一个http状态码41错误,告诉你请求格式不正确. &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;3dfb4228&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h3 id=&quot;5什么是同源策略怎么解决跨域问题&quot;&gt;5、什么是同源策略？怎么解决跨域问题&lt;/h3&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: 同源策略: 同源策略是浏览器的一种安全策略, 所谓同源是指域名、协议、端口完全相同，不同源则跨域。 解决跨域的方法: 1. 通过jsonp跨域 2....</description>
+        <pubDate>Sat, 21 Apr 2018 12:26:40 +0000</pubDate>
+        <link>/candy-candies-candy/</link>
+        <guid isPermaLink="true">/candy-candies-candy/</guid>
+        
+        <category>food</category>
+        
+        <category>tips</category>
+        
+        <category>Ajax和Node</category>
+      </item>
+    
+      <item>
+        <title>JS基础面试题</title>
+        <description>&lt;p&gt;&lt;a name=&quot;CQin7&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h1 id=&quot;js基础&quot;&gt;JS基础&lt;/h1&gt; &lt;p&gt;&lt;a name=&quot;Gruog&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;1js的数据类型有哪些&quot;&gt;1、js的数据类型有哪些&lt;/h2&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: 简单数据类型: number string boolean undefined null symbol 复杂数据类型: object function array &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;Zj01o&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;2返回false的情况有哪些&quot;&gt;2、返回false的情况有哪些&lt;/h2&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: 0 &quot;&quot; null false NaN undefined 不成立的表达式 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;H1w0q&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;3两个等号和三个等号的区别&quot;&gt;3、两个等号和三个等号的区别&lt;/h2&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;答&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;：&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;表示是相等&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;只比较值&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;。&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;在比较时&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;会将两边的值转成相同类型的值&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;然后比较&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;。&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;表示是全等&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;不仅比较值&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;也比较类型&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;AxBD0&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;4null和undefined的区别&quot;&gt;4、null和undefined的区别&lt;/h2&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;答&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;：&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;表示空值&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;没有获取到&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;。&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;返回&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span...</description>
+        <pubDate>Mon, 12 Mar 2018 12:26:40 +0000</pubDate>
+        <link>/trust-me-it-will-work/</link>
+        <guid isPermaLink="true">/trust-me-it-will-work/</guid>
+        
+        <category>languages</category>
+        
+        <category>tips</category>
+        
+        <category>JS基础面试题</category>
+      </item>
+    
+      <item>
+        <title>H5和C3</title>
+        <description>&lt;p&gt;&lt;a name=&quot;JnlKs&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;1盒子塌陷的原因解决方式&quot;&gt;1、盒子塌陷的原因？解决方式&lt;/h2&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;原因: 1. 浮动导致的塌陷,浮动会脱落标准流 2. 嵌套的两个盒子,子盒子设置margin-top会导致父盒子一下下移 解决方法:第一种情况 1 清除浮动; 2 给父盒子加高度; 3 给父元素添加overflow:hidden 第一种情况 1 给父元素加上边框; 2 给父元素添加overflow:hidden &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;kOjxl&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;2不定宽高的div水平垂直居中&quot;&gt;2、不定宽高的div水平垂直居中&lt;/h2&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: 1、父元素添加 position: relative div{ position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); } 2、div { display: flex; justify-content:center; //子元素水平居中 align-items:center; //子元素垂直居中 } 3、#box { width: 100px; height: 100px; position: relative; } #content { width: 50px; height: 50px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; } &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;v8n41&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;3css写一个三角形&quot;&gt;3、css写一个三角形&lt;/h2&gt; &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;答: div { width: 0; height:...</description>
+        <pubDate>Sat, 03 Feb 2018 12:26:40 +0000</pubDate>
+        <link>/how-to-turn-your-dog-into-a-jedi-master/</link>
+        <guid isPermaLink="true">/how-to-turn-your-dog-into-a-jedi-master/</guid>
+        
+        <category>H5</category>
+        
+        <category>C3</category>
+        
+        <category>H5和C3</category>
+      </item>
+    
+      <item>
+        <title>面试真题</title>
+        <description>&lt;h2 id=&quot;自己整理的面试题&quot;&gt;自己整理的面试题&lt;/h2&gt; &lt;h2 id=&quot;unknown和any的区别&quot;&gt;unknown和any的区别&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;any放弃类型检查 unknown更加严格，使用时要用类型守卫或者类型断言 &lt;ul&gt; &lt;li&gt;访问属性&lt;/li&gt; &lt;li&gt;设置属性&lt;/li&gt; &lt;li&gt;调用方法&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li&gt;联合类型 &lt;ul&gt; &lt;li&gt;或的关系&lt;/li&gt; &lt;li&gt;和any联合&lt;/li&gt; &lt;li&gt;和unknown联合&lt;/li&gt; &lt;li&gt;any和unknown联合&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li&gt;交叉类型 &lt;ul&gt; &lt;li&gt;对象类型交叉是复用，除此之外还有一种情况就是取交集&lt;/li&gt; &lt;li&gt;和any交叉&lt;/li&gt; &lt;li&gt;和unknown交叉&lt;/li&gt; &lt;li&gt;any和unknown交叉&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;h1 id=&quot;北京&quot;&gt;&lt;strong&gt;北京&lt;/strong&gt;&lt;/h1&gt; &lt;h2 id=&quot;一北京北领无线科技&quot;&gt;&lt;strong&gt;一、北京北领无线科技&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;​ 1. 做过页面静态化吗？举例，一个动态新闻站，如何实现页面静态化，生成变成html页面？ 前端写不同的模板页面，调用服务端数据，生成不同的静态页网站，这个需求（7.25号）&lt;/p&gt; &lt;p&gt;答：我们在常规模式：就是前端写好的静态页，里面需要后台的数据，通过ajax请求获取数据，【动态】进行渲染! 所谓的前后端分离&lt;/p&gt; &lt;p&gt;页面静态化：我们前端写好的静态页，没有ajax，交给后台，他们把我们的html当做模版，直接把后台数据插入好，用户请求连接的时候，直接把页面+数据一次性给了用户。&lt;/p&gt; &lt;h2 id=&quot;二-同方泰德&quot;&gt;二、 &lt;strong&gt;同方泰德&lt;/strong&gt;&lt;/h2&gt; &lt;h4 id=&quot;1什么是响应式布局&quot;&gt;&lt;strong&gt;1.什么是响应式布局：&lt;/strong&gt;&lt;/h4&gt; &lt;p&gt;​ 网页能够适应不同屏幕大小和设备类型，提供一致的用户体验。&lt;/p&gt; &lt;ol&gt; &lt;li&gt;流式布局（Fluid Layout）：使用百分比或相对单位（如em、rem）来定义网页元素和容器的宽度，使其能够根据屏幕尺寸自动调整大小。&lt;/li&gt; &lt;li&gt;媒体查询（Media Queries）：通过在 CSS 中使用媒体查询，可以根据不同的屏幕尺寸、分辨率、设备类型等条件来应用不同的样式规则。例如，可以针对不同的屏幕宽度范围修改字体大小、隐藏某些元素或调整布局。&lt;/li&gt; &lt;li&gt;弹性网格（Flexible Grid）：使用 CSS 中的弹性盒子（Flexbox）或网格布局（Grid Layout），使网页布局能够根据屏幕尺寸和内容长度自动调整，实现灵活的栅格系统。&lt;/li&gt; &lt;li&gt;图片响应式（Responsive Images）：通过使用 CSS 或 HTML 的属性，可以根据不同设备的像素密度或屏幕尺寸，选择并显示适当大小的图像，以提高加载速度和显示效果。&lt;/li&gt; &lt;/ol&gt; &lt;h4 id=&quot;2什么是bfc&quot;&gt;2.什么是bfc&lt;/h4&gt; &lt;p&gt;​ BFC 是页面上的一个独立容器，有一套自己的渲染规则，它决定了其中的元素如何布局、相互影响和与外部元素交互。&lt;/p&gt; &lt;p&gt;​ BFC 具有以下特性和作用：&lt;/p&gt; &lt;ol&gt; &lt;li&gt; &lt;p&gt;清除浮动：当一个元素的 overflow 属性被修改的话，那么这个元素就会创建一个 BFC，并且可以清除浮动。那么他就不会溢出到这个元素的外部，只是会影响它内部的布局。&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;垂直边距重叠：在同一个 BFC 内部的块级元素之间，相邻的垂直边距会发生重叠。但是，不同 BFC 的元素之间的垂直边距不会重叠。&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;自适应高度：当一个元素的子元素都是浮动元素时，该元素将会包含子元素，撑开高度，防止父元素塌陷。&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;阻止文本环绕：一个元素创建的 BFC 会阻止文本环绕在其周围，使文本只能在 BFC 区域内流动。&lt;/p&gt; &lt;/li&gt; &lt;li&gt;...</description>
+        <pubDate>Mon, 14 Aug 2017 22:55:45 +0000</pubDate>
+        <link>/let-flexbox-work-for-you-or-perish/</link>
+        <guid isPermaLink="true">/let-flexbox-work-for-you-or-perish/</guid>
+        
+        <category>真题</category>
+        
+        <category>面试</category>
+        
+        <category>自己整理的面试真题</category>
+      </item>
+    
+      <item>
+        <title>封装网络请求</title>
+        <description>&lt;p&gt;将一个基于回调的异步网络请求，封转成基于 Promise 的网络请求。&lt;/p&gt; &lt;p&gt;&lt;a name=&quot;SClBf&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h1 id=&quot;需求分析&quot;&gt;需求分析&lt;/h1&gt; &lt;p&gt;我们期望的使用支持 Promise 的第三发请求语法&lt;/p&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;npm第三方包或者自己封转&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 发起请求&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;url地址&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;请求参数1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;值1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;请求参数2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;值2&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;使用封转Promise获取到的返回数据：&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;a name=&quot;jH8nz&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h1 id=&quot;封装过程&quot;&gt;封装过程&lt;/h1&gt; &lt;p&gt;:::danger 我们通过函数的使用方式来倒退函数的封装 :::&lt;/p&gt; &lt;p&gt;&lt;a name=&quot;FcSD7&quot;&gt;&lt;/a&gt;&lt;/p&gt; &lt;h2 id=&quot;第一步&quot;&gt;第一步&lt;/h2&gt; &lt;p&gt;既然使用时导入的是一个对象，所以我们导出一个对象。这个对象可以调用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get(url,...</description>
+        <pubDate>Mon, 07 Aug 2017 23:04:08 +0000</pubDate>
+        <link>/a-star-has-fallen-from-the-sky-and-the-cat-ate-it/</link>
+        <guid isPermaLink="true">/a-star-has-fallen-from-the-sky-and-the-cat-ate-it/</guid>
+        
+        <category>promis</category>
+        
+        <category>story</category>
+        
+        <category>封装网络请求</category>
+      </item>
+    
+      <item>
+        <title>Smoke alert</title>
+        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
+        <pubDate>Sat, 29 Jul 2017 13:24:49 +0000</pubDate>
+        <link>/smoke-alert/</link>
+        <guid isPermaLink="true">/smoke-alert/</guid>
+        
+        <category>jekyll</category>
+        
+        <category>wordpress</category>
+        
+        <category>blog</category>
+        
+        <category>blog</category>
+      </item>
+    
+      <item>
+        <title>Do you believe that a spider can dance?</title>
+        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
+        <pubDate>Thu, 08 Jun 2017 12:00:00 +0000</pubDate>
+        <link>/do-you-believe-that-a-spider-can-dance/</link>
+        <guid isPermaLink="true">/do-you-believe-that-a-spider-can-dance/</guid>
+        
+        <category>fate</category>
+        
+        <category>travel</category>
+        
+        <category>travel</category>
+      </item>
+    
+      <item>
+        <title>A cook cries in the rain at night</title>
+        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
+        <pubDate>Sun, 04 Jun 2017 12:00:00 +0000</pubDate>
+        <link>/a-cook-cries-in-the-rain-at-night/</link>
+        <guid isPermaLink="true">/a-cook-cries-in-the-rain-at-night/</guid>
+        
+        <category>cook</category>
+        
+        <category>cucine</category>
+        
+        <category>story</category>
+        
+        <category>diet</category>
+      </item>
+    
+      <item>
+        <title>Grab your band and get out</title>
+        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
+        <pubDate>Thu, 11 May 2017 12:00:00 +0000</pubDate>
+        <link>/grab-your-band-and-get-out/</link>
+        <guid isPermaLink="true">/grab-your-band-and-get-out/</guid>
+        
+        <category>music</category>
+        
+        <category>band</category>
+        
+        <category>passion</category>
+        
+        <category>music</category>
+      </item>
+    
+      <item>
+        <title>Passion is dangerous, go for it!</title>
+        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
+        <pubDate>Sun, 06 Sep 2015 12:00:00 +0000</pubDate>
+        <link>/passion-is-dangerous-go-for-it/</link>
+        <guid isPermaLink="true">/passion-is-dangerous-go-for-it/</guid>
+        
+        <category>work</category>
+        
+        <category>career</category>
+        
+        <category>work</category>
+      </item>
+    
+      <item>
+        <title>Birds can fly, but this you knew already</title>
+        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
+        <pubDate>Fri, 10 Sep 2010 12:26:40 +0000</pubDate>
+        <link>/birds-can-fly-but-this-you-knew-already/</link>
+        <guid isPermaLink="true">/birds-can-fly-but-this-you-knew-already/</guid>
+        
+        <category>life</category>
+        
+        <category>tips</category>
+        
+        <category>life</category>
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    <title>Ajax和Node | 李梓涵</title>
+    <meta name="description" content="众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。">
+    
+        <meta name="keywords" content="food, tips">
+    
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ajax和Node | 李梓涵">
+    <meta name="twitter:description" content="众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。">
+
+    
+        <meta property="twitter:image" content="https://img2.baidu.com/it/u=741352811,2667400721&fm=253&fmt=auto&app=138&f=PNG?w=812&h=500">
+    
+    
+    
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="/candy-candies-candy/">
+    <meta property="og:title" content="Ajax和Node | 李梓涵">
+    <meta property="og:image" content="https://img2.baidu.com/it/u=741352811,2667400721&fm=253&fmt=auto&app=138&f=PNG?w=812&h=500">
+    <meta property="og:description" content="众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。">
+    <meta property="og:site_name" content="李梓涵的个人博客">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="李梓涵">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="msapplication-square70x70logo" content="smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="widetile.png" />
+    <meta name="msapplication-square310x310logo" content="largetile.png" />
+    
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="#141414">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="canonical" href="/candy-candies-candy/">
+    <link rel="alternate" type="application/rss+xml" title="李梓涵的个人博客" href="/feed.xml" />
+
+    <!-- Include extra styles -->
+    
+
+    <!-- JavaScript enabled/disabled -->
+    <script>
+        document.querySelector('html').classList.remove('no-js');
+    </script>
+</head>
+
+    <body class="has-push-menu">
+        
+
+
+
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none" version="1.1"><defs><symbol id="icon-menu" viewBox="0 0 1024 1024"><path class="path1" d="M128 213.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 725.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 469.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5z"/></symbol><symbol id="icon-search" viewBox="0 0 951 1024"><path class="path1" d="M658.286 475.429q0-105.714-75.143-180.857t-180.857-75.143-180.857 75.143-75.143 180.857 75.143 180.857 180.857 75.143 180.857-75.143 75.143-180.857zM950.857 950.857q0 29.714-21.714 51.429t-51.429 21.714q-30.857 0-51.429-21.714l-196-195.429q-102.286 70.857-228 70.857-81.714 0-156.286-31.714t-128.571-85.714-85.714-128.571-31.714-156.286 31.714-156.286 85.714-128.571 128.571-85.714 156.286-31.714 156.286 31.714 128.571 85.714 85.714 128.571 31.714 156.286q0 125.714-70.857 228l196 196q21.143 21.143 21.143 51.429z"/></symbol><symbol id="icon-close" viewBox="0 0 1000 1000"><path d="M969.8,870.3c27,27.7,27,71.8,0,99.1C955.7,983,937.9,990,920,990c-17.9,0-35.7-7-49.7-20.7L500,599L129.6,969.4C115.6,983,97.8,990,79.9,990s-35.7-7-49.7-20.7c-27-27.3-27-71.4,0-99.1L400.9,500L30.3,129.3c-27-27.3-27-71.4,0-99.1c27.3-27,71.8-27,99.4,0L500,400.9L870.4,30.2c27.7-27,71.8-27,99.4,0c27,27.7,27,71.8,0,99.1L599.1,500L969.8,870.3z"/></symbol><symbol id="icon-twitter" viewBox="0 0 951 1024"><path class="path1" d="M925.714 233.143q-38.286 56-92.571 95.429 0.571 8 0.571 24 0 74.286-21.714 148.286t-66 142-105.429 120.286-147.429 83.429-184.571 31.143q-154.857 0-283.429-82.857 20 2.286 44.571 2.286 128.571 0 229.143-78.857-60-1.143-107.429-36.857t-65.143-91.143q18.857 2.857 34.857 2.857 24.571 0 48.571-6.286-64-13.143-106-63.714t-42-117.429v-2.286q38.857 21.714 83.429 23.429-37.714-25.143-60-65.714t-22.286-88q0-50.286 25.143-93.143 69.143 85.143 168.286 136.286t212.286 56.857q-4.571-21.714-4.571-42.286 0-76.571 54-130.571t130.571-54q80 0 134.857 58.286 62.286-12 117.143-44.571-21.143 65.714-81.143 101.714 53.143-5.714 106.286-28.571z"/></symbol><symbol id="icon-facebook" viewBox="0 0 585 1024"><path class="path1" d="M548 6.857v150.857h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571q0-106.286 59.429-164.857t158.286-58.571q84 0 130.286 6.857z"/></symbol><symbol id="icon-clock" viewBox="0 0 1000 1000"><path d="M500,10C229.8,10,10,229.8,10,500c0,270.2,219.8,490,490,490c270.2,0,490-219.8,490-490C990,229.8,770.2,10,500,10z M500,910.2c-226.2,0-410.2-184-410.2-410.2c0-226.2,184-410.2,410.2-410.2c226.2,0,410.2,184,410.2,410.2C910.2,726.1,726.2,910.2,500,910.2z M753.1,374c8.2,11.9,5.2,28.1-6.6,36.3L509.9,573.7c-4.4,3.1-9.6,4.6-14.8,4.6c-4.1,0-8.3-1-12.1-3c-8.6-4.5-14-13.4-14-23.1V202.5c0-14.4,11.7-26.1,26.1-26.1c14.4,0,26.1,11.7,26.1,26.1v300l195.6-135.1C728.7,359.2,744.9,362.1,753.1,374z"/></symbol><symbol id="icon-calendar" viewBox="0 0 1000 1000"><path d="M920,500v420H80V500H920 M990,430H10v490c0,38.7,31.3,70,70,70h840c38.7,0,70-31.3,70-70V430L990,430z"/><path d="M850,80v105c0,57.9-47.2,105-105,105c-58,0-105-47.1-105-105V80H360v105c0,57.9-47.2,105-105,105c-58,0-105-47.1-105-105V80C72.8,80,10,142.7,10,220v140h980V220C990,142.7,927.2,80,850,80z"/><path d="M255,10c-19.3,0-35,15.8-35,35v140c0,19.2,15.7,35,35,35c19.3,0,35-15.8,35-35V45C290,25.8,274.3,10,255,10z"/><path d="M745,10c-19.3,0-35,15.8-35,35v140c0,19.2,15.7,35,35,35c19.3,0,35-15.8,35-35V45C780,25.8,764.3,10,745,10z"/></symbol><symbol id="icon-github" viewBox="0 0 12 14"><path d="M6 1q1.633 0 3.012 0.805t2.184 2.184 0.805 3.012q0 1.961-1.145 3.527t-2.957 2.168q-0.211 0.039-0.312-0.055t-0.102-0.234q0-0.023 0.004-0.598t0.004-1.051q0-0.758-0.406-1.109 0.445-0.047 0.801-0.141t0.734-0.305 0.633-0.52 0.414-0.82 0.16-1.176q0-0.93-0.617-1.609 0.289-0.711-0.062-1.594-0.219-0.070-0.633 0.086t-0.719 0.344l-0.297 0.187q-0.727-0.203-1.5-0.203t-1.5 0.203q-0.125-0.086-0.332-0.211t-0.652-0.301-0.664-0.105q-0.352 0.883-0.062 1.594-0.617 0.68-0.617 1.609 0 0.664 0.16 1.172t0.41 0.82 0.629 0.523 0.734 0.305 0.801 0.141q-0.305 0.281-0.383 0.805-0.164 0.078-0.352 0.117t-0.445 0.039-0.512-0.168-0.434-0.488q-0.148-0.25-0.379-0.406t-0.387-0.187l-0.156-0.023q-0.164 0-0.227 0.035t-0.039 0.090 0.070 0.109 0.102 0.094l0.055 0.039q0.172 0.078 0.34 0.297t0.246 0.398l0.078 0.18q0.102 0.297 0.344 0.48t0.523 0.234 0.543 0.055 0.434-0.027l0.18-0.031q0 0.297 0.004 0.691t0.004 0.426q0 0.141-0.102 0.234t-0.312 0.055q-1.812-0.602-2.957-2.168t-1.145-3.527q0-1.633 0.805-3.012t2.184-2.184 3.012-0.805zM2.273 9.617q0.023-0.055-0.055-0.094-0.078-0.023-0.102 0.016-0.023 0.055 0.055 0.094 0.070 0.047 0.102-0.016zM2.516 9.883q0.055-0.039-0.016-0.125-0.078-0.070-0.125-0.023-0.055 0.039 0.016 0.125 0.078 0.078 0.125 0.023zM2.75 10.234q0.070-0.055 0-0.148-0.062-0.102-0.133-0.047-0.070 0.039 0 0.141t0.133 0.055zM3.078 10.562q0.062-0.062-0.031-0.148-0.094-0.094-0.156-0.023-0.070 0.062 0.031 0.148 0.094 0.094 0.156 0.023zM3.523 10.758q0.023-0.086-0.102-0.125-0.117-0.031-0.148 0.055t0.102 0.117q0.117 0.047 0.148-0.047zM4.016 10.797q0-0.102-0.133-0.086-0.125 0-0.125 0.086 0 0.102 0.133 0.086 0.125 0 0.125-0.086zM4.469 10.719q-0.016-0.086-0.141-0.070-0.125 0.023-0.109 0.117t0.141 0.062 0.109-0.109z"></path></symbol><symbol id="icon-medium" viewBox="0 0 1000 1000"><path d="M336.5,240.2v641.5c0,9.1-2.3,16.9-6.8,23.2s-11.2,9.6-20,9.6c-6.2,0-12.2-1.5-18-4.4L37.3,782.7c-7.7-3.6-14.1-9.8-19.4-18.3S10,747.4,10,739V115.5c0-7.3,1.8-13.5,5.5-18.6c3.6-5.1,8.9-7.7,15.9-7.7c5.1,0,13.1,2.7,24.1,8.2l279.5,140C335.9,238.6,336.5,239.5,336.5,240.2L336.5,240.2z M371.5,295.5l292,473.6l-292-145.5V295.5z M990,305.3v576.4c0,9.1-2.6,16.5-7.7,22.1c-5.1,5.7-12,8.5-20.8,8.5s-17.3-2.4-25.7-7.1L694.7,784.9L990,305.3z M988.4,239.7c0,1.1-46.8,77.6-140.3,229.4C754.6,621,699.8,709.8,683.8,735.7L470.5,389l177.2-288.2c6.2-10.2,15.7-15.3,28.4-15.3c5.1,0,9.8,1.1,14.2,3.3l295.9,147.7C987.6,237.1,988.4,238.2,988.4,239.7L988.4,239.7z"/></symbol><symbol id="icon-instagram" viewBox="0 0 489.84 489.84"><path d="M249.62,50.46c65.4,0,73.14.25,99,1.43C372.47,53,385.44,57,394.07,60.32a75.88,75.88,0,0,1,28.16,18.32,75.88,75.88,0,0,1,18.32,28.16c3.35,8.63,7.34,21.6,8.43,45.48,1.18,25.83,1.43,33.57,1.43,99s-0.25,73.14-1.43,99c-1.09,23.88-5.08,36.85-8.43,45.48a81.11,81.11,0,0,1-46.48,46.48c-8.63,3.35-21.6,7.34-45.48,8.43-25.82,1.18-33.57,1.43-99,1.43s-73.15-.25-99-1.43c-23.88-1.09-36.85-5.08-45.48-8.43A75.88,75.88,0,0,1,77,423.86,75.88,75.88,0,0,1,58.69,395.7c-3.35-8.63-7.34-21.6-8.43-45.48-1.18-25.83-1.43-33.57-1.43-99s0.25-73.14,1.43-99c1.09-23.88,5.08-36.85,8.43-45.48A75.88,75.88,0,0,1,77,78.64a75.88,75.88,0,0,1,28.16-18.32c8.63-3.35,21.6-7.34,45.48-8.43,25.83-1.18,33.57-1.43,99-1.43m0-44.13c-66.52,0-74.86.28-101,1.47s-43.87,5.33-59.45,11.38A120.06,120.06,0,0,0,45.81,47.44,120.06,120.06,0,0,0,17.56,90.82C11.5,106.4,7.36,124.2,6.17,150.27s-1.47,34.46-1.47,101,0.28,74.86,1.47,101,5.33,43.87,11.38,59.45a120.06,120.06,0,0,0,28.25,43.38,120.06,120.06,0,0,0,43.38,28.25c15.58,6.05,33.38,10.19,59.45,11.38s34.46,1.47,101,1.47,74.86-.28,101-1.47,43.87-5.33,59.45-11.38a125.24,125.24,0,0,0,71.63-71.63c6.05-15.58,10.19-33.38,11.38-59.45s1.47-34.46,1.47-101-0.28-74.86-1.47-101-5.33-43.87-11.38-59.45a120.06,120.06,0,0,0-28.25-43.38,120.06,120.06,0,0,0-43.38-28.25C394.47,13.13,376.67,9,350.6,7.8s-34.46-1.47-101-1.47h0Z" transform="translate(-4.7 -6.33)" /><path d="M249.62,125.48A125.77,125.77,0,1,0,375.39,251.25,125.77,125.77,0,0,0,249.62,125.48Zm0,207.41a81.64,81.64,0,1,1,81.64-81.64A81.64,81.64,0,0,1,249.62,332.89Z" transform="translate(-4.7 -6.33)"/><circle cx="375.66" cy="114.18" r="29.39" /></symbol><symbol id="icon-linkedin" viewBox="0 0 12 14"><path d="M2.727 4.883v7.742h-2.578v-7.742h2.578zM2.891 2.492q0.008 0.57-0.395 0.953t-1.059 0.383h-0.016q-0.641 0-1.031-0.383t-0.391-0.953q0-0.578 0.402-0.957t1.051-0.379 1.039 0.379 0.398 0.957zM12 8.187v4.437h-2.57v-4.141q0-0.82-0.316-1.285t-0.988-0.465q-0.492 0-0.824 0.27t-0.496 0.668q-0.086 0.234-0.086 0.633v4.32h-2.57q0.016-3.117 0.016-5.055t-0.008-2.313l-0.008-0.375h2.57v1.125h-0.016q0.156-0.25 0.32-0.438t0.441-0.406 0.68-0.34 0.895-0.121q1.336 0 2.148 0.887t0.813 2.598z"></path></symbol><symbol id="icon-heart" viewBox="0 0 34 30"><path d="M17,29.7 L16.4,29.2 C3.5,18.7 0,15 0,9 C0,4 4,0 9,0 C13.1,0 15.4,2.3 17,4.1 C18.6,2.3 20.9,0 25,0 C30,0 34,4 34,9 C34,15 30.5,18.7 17.6,29.2 L17,29.7 Z M9,2 C5.1,2 2,5.1 2,9 C2,14.1 5.2,17.5 17,27.1 C28.8,17.5 32,14.1 32,9 C32,5.1 28.9,2 25,2 C21.5,2 19.6,4.1 18.1,5.8 L17,7.1 L15.9,5.8 C14.4,4.1 12.5,2 9,2 Z" id="Shape"></path></symbol><symbol id="icon-arrow-right" viewBox="0 0 25.452 25.452"><path d="M4.471,24.929v-2.004l12.409-9.788c0.122-0.101,0.195-0.251,0.195-0.411c0-0.156-0.073-0.31-0.195-0.409L4.471,2.526V0.522c0-0.2,0.115-0.384,0.293-0.469c0.18-0.087,0.396-0.066,0.552,0.061l15.47,12.202c0.123,0.1,0.195,0.253,0.195,0.409c0,0.16-0.072,0.311-0.195,0.411L5.316,25.34c-0.155,0.125-0.372,0.147-0.552,0.061C4.586,25.315,4.471,25.13,4.471,24.929z"/></symbol><symbol id="icon-star" viewBox="0 0 48 48"><path fill="currentColor" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"/><path fill="#ffffff" d="M24,11l3.898,7.898l8.703,1.301l-6.301,6.102l1.5,8.699L24,30.898L16.199,35l1.5-8.699l-6.301-6.102  l8.703-1.301L24,11z"/></symbol><symbol id="icon-read" viewBox="0 0 32 32"><path fill="currentColor" d="M29,4H3C1.343,4,0,5.343,0,7v18c0,1.657,1.343,3,3,3h10c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1h10  c1.657,0,3-1.343,3-3V7C32,5.343,30.657,4,29,4z M29,5v20H18.708c-0.618,0-1.236,0.146-1.789,0.422l-0.419,0.21V5H29z M15.5,5  v20.632l-0.419-0.21C14.528,25.146,13.91,25,13.292,25H3V5H15.5z M31,25c0,1.103-0.897,2-2,2H18v1h-4v-1H3c-1.103,0-2-0.897-2-2V7  c0-0.737,0.405-1.375,1-1.722V25c0,0.552,0.448,1,1,1h10.292c0.466,0,0.925,0.108,1.342,0.317l0.919,0.46  c0.141,0.07,0.294,0.106,0.447,0.106c0.153,0,0.306-0.035,0.447-0.106l0.919-0.46C17.783,26.108,18.242,26,18.708,26H29  c0.552,0,1-0.448,1-1V5.278C30.595,5.625,31,6.263,31,7V25z M6,12.5C6,12.224,6.224,12,6.5,12h5c0.276,0,0.5,0.224,0.5,0.5  S11.776,13,11.5,13h-5C6.224,13,6,12.776,6,12.5z M6,14.5C6,14.224,6.224,14,6.5,14h5c0.276,0,0.5,0.224,0.5,0.5S11.776,15,11.5,15  h-5C6.224,15,6,14.776,6,14.5z M6,16.5C6,16.224,6.224,16,6.5,16h5c0.276,0,0.5,0.224,0.5,0.5S11.776,17,11.5,17h-5  C6.224,17,6,16.776,6,16.5z M20,12.5c0-0.276,0.224-0.5,0.5-0.5h5c0.276,0,0.5,0.224,0.5,0.5S25.776,13,25.5,13h-5  C20.224,13,20,12.776,20,12.5z M20,14.5c0-0.276,0.224-0.5,0.5-0.5h5c0.276,0,0.5,0.224,0.5,0.5S25.776,15,25.5,15h-5  C20.224,15,20,14.776,20,14.5z M20,16.5c0-0.276,0.224-0.5,0.5-0.5h5c0.276,0,0.5,0.224,0.5,0.5S25.776,17,25.5,17h-5  C20.224,17,20,16.776,20,16.5z"></path></symbol></defs></svg>
+
+        <header class="bar-header">
+    <a id="menu" role="button">
+        <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+    </a>
+    <h1 class="logo">
+        <a href="/">
+            
+                李梓涵 <span class="version">v3.1.2</span>
+            
+        </a>
+    </h1>
+    <a id="search" class="dosearch" role="button">
+        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
+    </a>
+    
+        <a href="https://github.com/thiagorossener/jekflix-template" class="get-theme" role="button">
+            Get this theme!
+        </a>
+    
+</header>
+
+<div id="mask" class="overlay"></div>
+
+<aside class="sidebar" id="sidebar">
+    <nav id="navigation">
+      <h2>Menu</h2>
+      <ul>
+  
+    
+      <li>
+        <a href="/">首页</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/about/">关于作者</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/contact">联系作者</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/feed.xml">源码</a>
+      </li>
+    
+  
+</ul>
+
+    </nav>
+</aside>
+
+<div class="search-wrapper">
+    <div class="search-form">
+        <input type="text" class="search-field" placeholder="Search">
+        <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+        <ul class="search-results search-list"></ul>
+    </div>
+</div>
+
+
+
+        <section class="post two-columns">
+            <article role="article" class="post-content">
+                <p class="post-info">
+                    
+                        <svg class="icon-calendar" id="date"><use xlink:href="#icon-calendar"></use></svg>
+                        <time class="date" datetime="2018-04-21T12:26:40+00:00">
+                            
+
+
+April 21, 2018
+
+                        </time>
+                    
+                    <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
+                    <span>5 min to read</span>
+                </p>
+                <h1 class="post-title">Ajax和Node</h1>
+                <p class="post-subtitle">众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。</p>
+
+                
+                    <img src="https://img2.baidu.com/it/u=741352811,2667400721&fm=253&fmt=auto&app=138&f=PNG?w=812&h=500" alt="Featured image" class="post-cover">
+                
+
+                <!-- Pagination links -->
+
+
+
+                <!-- Add your table of contents here -->
+
+
+                <h3 id="1http和https的区别">1、http和https的区别</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答:
+  1.https协议需要到CA申请证书，一般免费证书较少，因而需要一定费用。
+  2.http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl/tls加密传输协议。
+  3.http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。
+  4.http的连接很简单，是无状态的；HTTPS协议是由SSL/TLS+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。
+</code></pre></div></div>
+
+<p><a name="c266e46c"></a></p>
+
+<h3 id="2get-和post的区别">2、get 和post的区别</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: get
+			1. 在url后面拼接参数,只能以文本的形式传递数据
+			2. 传递的数据量小,4KB左右
+			3. 安全性低, 会将数据显示在地址栏
+			4. 速度快,通常用于安全性要求不高的请求
+			5. 会缓存数据
+	post
+		    1. 安全性比较高
+			2. 传递数据量大,请求对数据长度没有要求
+			3. 请求不会被缓存,也不会保留在浏览器历史记录里
+</code></pre></div></div>
+
+<p><a name="fdfecfe4"></a></p>
+
+<h3 id="3项目中遇到的状态码有哪些">3、项目中遇到的状态码有哪些</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 200  请求成功,  2开头的异步表示请求成功
+		304  请求被允许,但请求内容没有改变, 3开头的一般请求完成
+		400  请求格式错误,  4开头的一般表示请求错误
+		404  请求的资源(网页)不存在,  
+		500  内部服务器错误,  5开头的一般都是指服务器错误
+</code></pre></div></div>
+
+<p><a name="acbf56f1"></a></p>
+
+<h3 id="4jsonp的原理以及优缺点">4、jsonp的原理？以及优缺点</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 原理: 利用script标签的src属性具有天然可跨域的特性，由服务端返回一个预先定义好的Javascript函数的调用，并且将服务器数据以该函数参数的形式响应给浏览器.
+		优点: 完美解决在测试或者开发中获取不同域下的数据,用户传递一个callback参数给服务端，然后服务端返回数据时会将这个callback参数作为函数名来包裹住JSON数据，这样客户端就可以随意定制自己的函数来自动处理返回数据了。
+		缺点：Jsonp只支持get请求而不支持post 请求,也即是说如果想传给后台一个json 格式的数据,此时问题就来了, 浏览器会报一个http状态码41错误,告诉你请求格式不正确.
+</code></pre></div></div>
+
+<p><a name="3dfb4228"></a></p>
+
+<h3 id="5什么是同源策略怎么解决跨域问题">5、什么是同源策略？怎么解决跨域问题</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 同源策略: 同源策略是浏览器的一种安全策略, 所谓同源是指域名、协议、端口完全相同，不同源则跨域。
+   解决跨域的方法: 
+			1. 通过jsonp跨域
+			2. 跨域资源共享（CORS  Access-Control-Allow-Origin: http://api.bob.com）
+			3. nginx代理跨域
+</code></pre></div></div>
+
+<p><a name="a12c9639"></a></p>
+
+<h3 id="6页面通信的方式有哪些">6、页面通信的方式有哪些</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 1. 通过url拼接地址
+	2. H5本地存储
+</code></pre></div></div>
+
+<p><a name="60048b26"></a></p>
+
+<h3 id="7你对websocket了解哪些">7、你对WebSocket了解哪些</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: WebSocket 是HTML5一种新的协议。它实现了浏览器与服务器全双工通信，能更好的节省服务器资源和带宽并达到实时通讯，它建立在TCP之上，同HTTP一样通过TCP来传输数据，但是它和HTTP最大不同是：
+	1. WebSocket是一种双向通信协议，在建立连接后，WebSocket服务器和Browser/Client Agent都能主动的向对方发送或接收数据，就像Socket一样；
+	2. WebSocket需要类似TCP的客户端和服务器端通过握手连接连接成功后才能相互通信。
+</code></pre></div></div>
+
+<p><a name="de3f7382"></a></p>
+
+<h3 id="8如何清除浏览器的缓存">8、如何清除浏览器的缓存</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: 当我们请求的地址相同的时候，浏览器为了提高性能，会把相同地址的数据进行缓存。如果服务端的数据发生改变，客户端也不会更新，那就需要清除缓存
+    解决：在url后面加时间戳
+    例如：https://www.baidu.com?time=New Date()
+</code></pre></div></div>
+
+<p><a name="37529f24"></a></p>
+
+<h3 id="9token的作用是什么">9、token的作用是什么</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: token是服务端生成的“令牌”，来标识不同身份的
+    1. 防止表单重复提交
+    2.判断用户是否登录
+</code></pre></div></div>
+
+<p><a name="76d7fe06"></a></p>
+
+<h3 id="10列举echarts常用的配置项说明含义">10、列举echarts常用的配置项，说明含义</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答:      图表标题 title
+		图例  legend
+		值域 dataRange
+		提示框 tooltip
+		区域缩放控制器 dataZoom
+		网格 grid
+		类目轴 categoryAxis
+		值型坐标轴默认参数 valueAxis
+		柱形图默认参数 bar
+		折线图默认参数 line
+		散点图默认参数 scatter
+		饼图默认参数 pie
+		默认标志图形类型列表 symbolList
+		可计算特性配置, 孤岛, 提示颜色 calculable
+</code></pre></div></div>
+
+<p><a name="61ef82c4"></a></p>
+
+<h3 id="11git如何管理一个项目和git如何解决合并冲突">11、git如何管理一个项目和git如何解决合并冲突</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1、git管理项目流程
+答: 1、git init初始化git仓库（新项目才有这一步）
+    2、git clone将远程仓库的项目资料下载下来
+    3、git checkout -b dev (dev 为本地分支名）
+    4、git add .将工作区文件存在暂存区
+    4、git commit -m  ""从暂存区存到仓储区
+    5、git checkout master切到master分支
+    6、git merge dev 合并分支,合并后要将分支删除
+    7、使用git push将其上传到远程仓库
+    8、第二上班，先pull一下，更新最新代码
+    
+2、git解决合并冲突
+答：冲突的原因：代码提交的时候，在当前行有新的代码要加入，就会出现冲突。例如：20行已经有代码了，但是合并的的代码20行也是有代码，这样就会出现冲突。
+	解决办法：如果是双方的代码是不同的业务，那就保留双方双方更改（vscode有提示）。如果是重复的业务逻辑，那就选择采用当前更改（vscode有提示）。
+</code></pre></div></div>
+
+<p><a name="5e464b44"></a></p>
+
+<h3 id="12介绍一下你们公司的开发流程自己理解形成自己的东西">12、介绍一下你们公司的开发流程（自己理解，形成自己的东西）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>答: （这是最基础的流程，自己理解，形成自己的东西）
+    1、项目确定下来后
+    2、先分配确定开发人员,然后产品会召集相关开发人员一起开一个项目分析会
+    3、接着就项目立项了,项目立项会形成一个prd,确定开发周期
+    4、然后就进入开发阶段了,在开发一段时间会进行前后端联调
+    5、功能完成后会先进行冒烟测试,检查是否有阻塞缺陷
+    6、开发全部结束就进入测试阶段
+    7、测试通过就可以上线了,上线之后会有一个回归测试，检查有没有影响以前的功能，保证全流程没有问题
+</code></pre></div></div>
+
+<p><a name="dcdf44bd"></a></p>
+
+<h3 id="13在地址栏输入网址到数据返回的过程是什么">13、在地址栏输入网址，到数据返回的过程是什么？</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="p">:</span>  <span class="mi">1</span><span class="p">.</span> <span class="nx">输入url地址后</span><span class="err">，</span><span class="nx">首先进行DNS解析</span><span class="err">，</span><span class="nx">将相应的域名解析为IP地址</span><span class="err">。</span>
+     <span class="mi">2</span><span class="p">.</span> <span class="nx">根据IP地址去寻找相应的服务器</span><span class="err">。</span>
+     <span class="mi">3</span><span class="p">.</span> <span class="nx">与服务器进行TCP的三次握手</span><span class="err">，</span><span class="nx">建立连接</span><span class="err">。</span>
+     <span class="mi">4</span><span class="p">.</span> <span class="nx">客户端发送请求</span><span class="err">，</span><span class="nx">找到相应的资源库</span><span class="err">。</span>
+     <span class="mi">5</span><span class="p">.</span> <span class="nx">客户端拿到数据</span><span class="err">，</span><span class="nx">进行相应的渲染</span><span class="err">。</span>
+</code></pre></div></div>
+
+<p><a name="eb14dcce"></a></p>
+
+<h3 id="14原生-ajax-请求的步骤">14、原生 ajax 请求的步骤</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">答</span><span class="err">：</span><span class="mi">1</span><span class="p">.</span><span class="nx">创建异步对象</span> <span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">()</span>
+    <span class="mi">2</span><span class="p">.</span><span class="nx">设置请求行</span>  <span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">()</span>
+    <span class="mi">3</span><span class="p">.</span><span class="nx">设置请求头</span>  <span class="nx">xhr</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">()</span>   <span class="nx">get请求没有请求头</span>
+    <span class="mi">4</span><span class="p">.</span><span class="nx">设置请求体</span>  <span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span>      <span class="nx">get请求没有请求体</span><span class="p">,</span><span class="nx">参数为null</span>
+    <span class="mi">5</span><span class="p">.</span><span class="nx">监视异步对象的状态变化</span>   <span class="nx">xhr</span><span class="p">.</span><span class="nx">onreadystatechange</span><span class="p">(){}</span>
+</code></pre></div></div>
+
+<p><a name="4e6f969f"></a></p>
+
+<h3 id="15什么是promise特点是什么">15、什么是promise，特点是什么</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="nx">首先</span><span class="err">，</span><span class="nx">它是一个对象</span><span class="err">，</span><span class="nx">也就是说与其他JavaScript对象的用法</span><span class="err">，</span><span class="nx">没有什么两样</span><span class="err">；</span><span class="nx">它使得异步操作具备同步操作的效果</span><span class="err">，</span><span class="nx">使得程序具备正常的同步运行的流程</span><span class="err">，</span><span class="nx">回调函数不必再一层层嵌套</span><span class="err">。</span>
+	<span class="nx">简单说</span><span class="err">，</span><span class="nx">它的思想是</span><span class="err">，</span><span class="nx">每一个异步任务立刻返回一个Promise对象</span><span class="err">，</span><span class="nx">由于是立刻返回</span><span class="err">，</span><span class="nx">所以可以采用同步操作的流程</span><span class="err">。</span><span class="nx">这个Promises对象有一个then方法</span><span class="err">，</span><span class="nx">允许指定回调函数</span><span class="err">，</span><span class="nx">在异步任务完成后调用</span><span class="err">。</span>
+    
+ <span class="nx">特点</span><span class="err">：</span>
+    <span class="mi">1</span><span class="err">、</span><span class="nx">Promise对象只有三种状态</span><span class="err">。</span>
+        <span class="nx">异步操作</span><span class="err">“</span><span class="nx">未完成</span><span class="err">”（</span><span class="nx">pending</span><span class="err">）</span>
+        <span class="nx">异步操作</span><span class="err">“</span><span class="nx">已完成</span><span class="err">”（</span><span class="nx">resolved</span><span class="err">，</span><span class="nx">又称fulfilled</span><span class="err">）</span>
+        <span class="nx">异步操作</span><span class="err">“</span><span class="nx">失败</span><span class="err">”（</span><span class="nx">rejected</span><span class="err">）</span>
+        <span class="nx">异步操作成功</span><span class="err">，</span><span class="nx">Promise对象传回一个值</span><span class="err">，</span><span class="nx">状态变为resolved</span><span class="err">。</span>
+        <span class="nx">异步操作失败</span><span class="err">，</span><span class="nx">Promise对象抛出一个错误</span><span class="err">，</span><span class="nx">状态变为rejected</span><span class="err">。</span>
+    <span class="mi">2</span><span class="err">、</span><span class="nx">promise的回调是同步的</span><span class="err">，</span><span class="nx">then是异步的</span>
+    <span class="mi">3</span><span class="err">、</span><span class="nx">可以链式调用</span>
+</code></pre></div></div>
+
+<p><a name="e6a50f14"></a></p>
+
+<h3 id="16promise的方法有哪些能说明其作用">16、promise的方法有哪些，能说明其作用</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">原型上的方法</span><span class="err">：</span>
+<span class="mi">1</span><span class="err">、</span><span class="nb">Promise</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">then</span><span class="p">()</span>
+	<span class="mi">1</span><span class="err">）</span><span class="nx">作用是为</span> <span class="nb">Promise</span> <span class="nx">实例添加状态改变时的回调函数</span><span class="err">。</span><span class="nx">接受两个回调函数作为参数</span><span class="err">。</span><span class="nx">第一个回调函数是Promise对象的状态变为resolved时调用</span><span class="err">，</span><span class="nx">第二个回调函数是Promise对象的状态变为rejected时调用</span><span class="err">。</span><span class="nx">其中</span><span class="err">，</span><span class="nx">第二个函数是可选的</span><span class="err">，</span><span class="nx">不一定要提供</span><span class="err">。</span>
+    <span class="mi">2</span><span class="err">）</span><span class="nx">返回的是另一个Promise对象</span><span class="err">，</span><span class="nx">后面还可以接着调用then方法</span><span class="err">。</span>
+<span class="mi">2</span><span class="err">、</span><span class="nb">Promise</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="k">catch</span><span class="p">()</span>
+	<span class="mi">1</span><span class="err">）</span><span class="nx">用于指定发生错误时的回调函数</span><span class="err">。</span>
+    <span class="mi">2</span><span class="err">）</span><span class="nx">返回的也是一个</span> <span class="nb">Promise</span> <span class="nx">对象</span><span class="err">，</span><span class="nx">因此还可以接着调用then方法</span>
+<span class="mi">3</span><span class="err">、</span><span class="nb">Promise</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="k">finally</span><span class="p">()</span>
+	<span class="mi">1</span><span class="err">）</span><span class="nx">finally方法用于指定不管</span> <span class="nb">Promise</span> <span class="nx">对象最后状态如何</span><span class="err">，</span><span class="nx">都会执行的回调函数</span><span class="err">。</span>
+    <span class="mi">2</span><span class="err">）</span><span class="nx">finally方法的回调函数不接受任何参数</span><span class="err">，</span><span class="nx">这意味着没有办法知道</span><span class="err">，</span><span class="nx">前面的</span> <span class="nb">Promise</span> <span class="nx">状态到底是fulfilled还是rejected</span><span class="err">。</span>
+
+<span class="nx">自身API</span><span class="p">:</span>
+<span class="mi">1</span><span class="err">、</span><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">()</span>
+	<span class="mi">1</span><span class="err">）</span><span class="nx">不带参数传递</span> <span class="err">—</span> <span class="nx">返回一个新的状态为resolve的promise对象</span>
+    <span class="mi">2</span><span class="err">）</span><span class="nx">参数是一个</span> <span class="nb">Promise</span> <span class="nx">实例</span><span class="err">—</span> <span class="nx">返回</span> <span class="nx">当前的promise实例</span>
+<span class="mi">2</span><span class="err">、</span><span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">()</span>
+	<span class="mi">1</span><span class="p">)</span><span class="nx">返回的是一个值</span>
+    <span class="mi">2</span><span class="err">）</span><span class="nx">返回的值会传递到下一个then的resolve方法参数中</span>
+<span class="mi">3</span><span class="err">、</span><span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">()</span> 
+	<span class="mi">1</span><span class="err">）</span><span class="nx">并行执行异步操作的能力</span>
+    <span class="mi">2</span><span class="err">）</span><span class="nx">所有异步操作执行完后才执行回调</span>
+<span class="mi">4</span><span class="err">、</span><span class="nb">Promise</span><span class="p">.</span><span class="nx">race</span><span class="p">()</span>
+	<span class="mi">1</span><span class="err">）</span><span class="nx">那个结果返回来的快就是</span><span class="err">，</span><span class="nx">那个结果</span><span class="err">，</span><span class="nx">不管结果是成功还是失败</span>
+</code></pre></div></div>
+
+<p><a name="40e69fb2"></a></p>
+
+<h3 id="17async和await是干什么的">17、async和await是干什么的</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="k">async</span> <span class="nx">用于申明一个</span> <span class="kd">function</span> <span class="nx">是异步的</span><span class="err">，</span><span class="nx">而</span> <span class="k">await</span> <span class="nx">用于等待一个异步方法执行完成</span><span class="err">。</span>
+<span class="mi">2</span><span class="err">、</span><span class="k">await</span> <span class="nx">只能出现在</span> <span class="k">async</span> <span class="nx">函数中</span><span class="err">。</span>
+<span class="mi">3</span><span class="err">、</span><span class="k">async</span> <span class="nx">函数返回的是一个</span> <span class="nb">Promise</span> <span class="nx">对象</span><span class="err">，</span><span class="nx">后面可以用then方法</span><span class="err">。</span>
+</code></pre></div></div>
+
+<p><a name="085cd3df"></a></p>
+
+<h3 id="18怎么理解三次握手">18、怎么理解三次握手</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">字段</span>	      <span class="nx">含义</span>
+<span class="nx">URG</span>	   <span class="nx">紧急指针是否有效</span><span class="err">。</span><span class="nx">为1</span><span class="err">，</span><span class="nx">表示某一位需要被优先处理</span>
+<span class="nx">ACK</span>	   <span class="nx">确认号是否有效</span><span class="err">，</span><span class="nx">一般置为1</span><span class="err">。</span>
+<span class="nx">PSH</span>	   <span class="nx">提示接收端应用程序立即从TCP缓冲区把数据读走</span><span class="err">。</span>
+<span class="nx">RST</span>	   <span class="nx">对方要求重新建立连接</span><span class="err">，</span><span class="nx">复位</span><span class="err">。</span>
+<span class="nx">SYN</span>	   <span class="nx">请求建立连接</span><span class="err">，</span><span class="nx">并在其序列号的字段进行序列号的初始值设定</span><span class="err">。</span><span class="nx">建立连接</span><span class="err">，</span><span class="nx">设置为1</span>
+<span class="nx">FIN</span>    <span class="nx">希望断开连接</span><span class="err">。</span>
+
+<span class="mi">1</span><span class="err">、</span><span class="nx">三次握手</span>
+    <span class="nx">第一次握手</span><span class="err">：</span><span class="nx">建立连接时</span><span class="err">，</span><span class="nx">客户端发送syn包到服务器</span><span class="err">，</span><span class="nx">等待服务器确认</span><span class="err">。</span>
+    <span class="nx">第二次握手</span><span class="err">：</span><span class="nx">服务器收到syn包</span><span class="err">，</span><span class="nx">必须确认客户的SYN</span><span class="err">，</span><span class="nx">同时自己也发送一个SYN包</span><span class="err">（</span><span class="nx">syn</span><span class="o">=</span><span class="nx">y</span><span class="err">）</span><span class="nx">到客户端</span>
+    <span class="nx">第三次握手</span><span class="err">：</span><span class="nx">客户端收到服务器的SYN</span><span class="o">+</span><span class="nx">ACK包</span><span class="err">，</span><span class="nx">向服务器发送确认包ACK</span><span class="err">，</span><span class="nx">此包发送完毕</span><span class="err">，</span><span class="nx">客户端和服务器进入</span><span class="err">（</span><span class="nx">TCP连接成功</span><span class="err">）</span><span class="nx">状态</span><span class="err">，</span><span class="nx">完成三次握手</span>
+   <span class="err">（</span><span class="nx">通俗</span><span class="err">：</span><span class="nx">主机1告诉主机2</span><span class="err">，</span><span class="nx">我可以向你请求数据吗</span><span class="err">。</span><span class="nx">主机2告诉主机1</span><span class="err">，</span><span class="nx">可以请求数据</span><span class="err">。</span><span class="nx">主机1告诉主机2</span><span class="err">，</span><span class="nx">那我来请求数据了</span><span class="err">，</span><span class="nx">请求完成</span><span class="err">，</span><span class="nx">实现三次握手</span><span class="err">）</span>
+</code></pre></div></div>
+
+<p><a name="9574e20e"></a></p>
+
+<h3 id="19怎么理解四次挥手">19、怎么理解四次挥手</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="err">、</span><span class="nx">四次挥手</span>
+    <span class="nx">第一次分手</span><span class="err">：</span><span class="nx">主机1</span><span class="err">（</span><span class="nx">可以使客户端</span><span class="err">，</span><span class="nx">也可以是服务器端</span><span class="err">）</span><span class="nx">向主机2发送一个FIN报文段</span><span class="err">；</span><span class="nx">此时</span><span class="err">，</span><span class="nx">主机1进入FIN_WAIT_1状态</span><span class="err">；</span><span class="nx">这表示主机1没有数据要发送给主机2了</span><span class="err">。</span>
+    <span class="nx">第二次分手</span><span class="err">：</span><span class="nx">主机2收到了主机1发送的FIN报文段</span><span class="err">，</span><span class="nx">向主机1回一个ACK报文段</span><span class="err">，</span><span class="nx">主机1进入FIN_WAIT_2状态</span><span class="err">；</span><span class="nx">主机2告诉主机1</span><span class="err">，</span><span class="nx">我</span><span class="err">“</span><span class="nx">同意</span><span class="err">”</span><span class="nx">你的关闭请求</span><span class="err">。</span>
+    <span class="nx">第三次分手</span><span class="err">：</span><span class="nx">主机2向主机1发送FIN报文段</span><span class="err">，</span><span class="nx">请求关闭连接</span><span class="err">，</span><span class="nx">同时主机2进入LAST_ACK状态</span><span class="err">。</span>
+    <span class="nx">第四次分手</span><span class="err">：</span><span class="nx">主机1收到主机2发送的FIN报文段</span><span class="err">，</span><span class="nx">向主机2发送ACK报文段</span><span class="err">，</span><span class="nx">然后主机1进入TIME_WAIT状态</span><span class="err">；</span><span class="nx">主机2收到主机1的ACK报文段以后</span><span class="err">，</span><span class="nx">就关闭连接</span><span class="err">；</span><span class="nx">此时</span><span class="err">，</span><span class="nx">主机1等待2MSL后依然没有收到回复</span><span class="err">，</span><span class="nx">则证明Server端已正常关闭</span><span class="err">，</span><span class="nx">那好</span><span class="err">，</span><span class="nx">主机1也可以关闭连接了</span><span class="err">。</span>
+    <span class="err">（</span><span class="nx">通俗</span><span class="err">：</span><span class="nx">主机1告诉主机2</span><span class="err">，</span><span class="nx">我没有数据要发送了</span><span class="err">，</span><span class="nx">希望断开连接</span><span class="err">。</span><span class="nx">主机2接到请求后说</span><span class="err">，</span><span class="nx">同意断开</span><span class="err">。</span><span class="nx">主机2告诉主机1可以关闭连接了</span><span class="err">。</span><span class="nx">主机1接到可以关闭的指令后</span><span class="err">，</span><span class="nx">关闭连接</span><span class="err">，</span><span class="nx">四次挥手完成</span><span class="err">）</span>
+</code></pre></div></div>
+
+<p><a name="e6eff10f"></a></p>
+
+<h3 id="20怎么理解事件循环机制">20、怎么理解事件循环机制</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="mi">1</span><span class="err">、</span><span class="nx">JavaScript</span> <span class="nx">是一门单线程语言</span><span class="p">.</span><span class="nx">单线程可能会出现阻塞的情况</span><span class="err">，</span><span class="nx">所js分了同步任务和异步任务</span><span class="err">。</span>
+    <span class="mi">2</span><span class="err">、</span><span class="nx">同步和异步任务分别进入不同的执行环境</span><span class="err">，</span><span class="nx">同步的进入主线程</span><span class="err">，</span><span class="nx">即主执行栈</span><span class="err">，</span><span class="nx">异步的进入</span> <span class="nx">Event</span> <span class="nx">Queue</span><span class="err">（</span><span class="nx">事件队列</span><span class="err">）</span> <span class="err">。</span><span class="nx">主线程内的任务执行完毕为空</span><span class="err">，</span><span class="nx">会去</span> <span class="nx">Event</span> <span class="nx">Queue</span> <span class="nx">读取对应的任务</span><span class="err">，</span><span class="nx">推入主线程执行</span><span class="err">。</span> <span class="nx">上述过程的不断重复就是我们说的</span> <span class="nx">Event</span> <span class="nx">Loop</span> <span class="p">(</span><span class="nx">事件循环</span><span class="p">)</span><span class="err">。</span>
+</code></pre></div></div>
+
+
+
+                <!-- Pagination links -->
+
+
+            </article>
+
+            
+                <aside class="see-also">
+                    <h2>See also</h2>
+                    <ul>
+                        
+                        
+                        
+                            <li>
+                                <a href="/welcome-to-the-desert-of-the-real/">
+                                    
+                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_crop,h_399,w_760/v1624834389/nature-connection_lp5s8h.jpg">
+                                    
+                                    <h3>欢迎来到李梓涵的个人博客</h3>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/why-books-should-be-your-priority/">
+                                    
+                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg">
+                                    
+                                    <h3>关于git命令推送</h3>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/the-quick-brown-fox-jumps-over-a-lazy-dog/">
+                                    
+                                        <img src="https://img0.baidu.com/it/u=385511469,3480835356&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281">
+                                    
+                                    <h3>ES6模块化和webpack</h3>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </aside>
+            
+
+        </section>
+
+        <!-- Add time bar only for pages without pagination -->
+        
+            <div class="time-bar" data-minutes="5">
+    <span class="time-completed"></span>
+    <span class="time-remaining"></span>
+    <div class="bar">
+        <span class="completed" style="width:0%;"></span>
+        <span class="remaining" style="width:100%;"></span>
+    </div>
+</div>
+
+            <div class="recommendation">
+    <div class="message">
+        <strong>Why don't you read something next?</strong>
+        <div>
+            <button>
+                <svg><use xlink:href="#icon-arrow-right"></use></svg>
+                <span>Go back to top</span>
+            </button>
+        </div>
+    </div>
+    
+    <a href="/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/" class="post-preview">
+        <div class="image">
+            
+                <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559820489/js-code_n83m7a.jpg">
+            
+        </div>
+        <h3 class="title">VUE基础面试题</h3>
+    </a>
+</div>
+
+        
+
+        <!-- Show modal if the post is the last one -->
+        
+
+        <!-- Show modal before user leaves the page -->
+        
+
+        <!-- Add your newsletter subscription form here -->
+
+        <section class="share">
+    <h3>Share</h3>
+    <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。&quot;%20/candy-candies-candy/%20via%20&#64;&hashtags=food,tips"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+    </a>
+    <a aria-label="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=/candy-candies-candy/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+    </a>
+</section>
+
+        
+
+
+        
+
+<section class="comments">
+    <h3>Comments</h3>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+    var disqus_loaded = false;
+
+    function load_disqus()
+    {
+        disqus_loaded = true;
+        var disqus_shortname = 'disqus_username';
+        var disqus_title = '';
+        var disqus_url = '/candy-candies-candy/';
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        var ldr = document.getElementById('disqus_loader');
+    };
+    window.onscroll = function(e) {
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
+            //hit bottom of page
+            if (disqus_loaded==false)
+                load_disqus()
+        }
+    };
+</script>
+
+
+
+        <footer>
+    <p>
+      
+        <a href="https://github.com/AsaSkrip" title="Github">
+          <svg><use xlink:href="#icon-github"></use></svg>
+        </a>
+      
+      
+      
+      
+      
+      
+    </p>
+
+    <ul>
+  
+    
+      <li>
+        <a href="/">首页</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/about/">关于作者</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/contact">联系作者</a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/feed.xml">源码</a>
+      </li>
+    
+  
+</ul>
+
+
+    <p>
+      <span>Jekflix</span> was made with <svg class="love"><use xlink:href="#icon-heart"></use></svg> by <a href="https://rossener.com" target="_blank" class="creator">Thiago Rossener</a>
+    </p>
+</footer>
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "李梓涵",
+  "description": "李梓涵是也一名非常优秀的前端开发工程师",
+  "url": "/",
+  "logo": {
+      "@type": "ImageObject",
+      "url": "/assets/img/icons/mediumtile.png",
+      "width": "600",
+      "height": "315"
+  },
+  "sameAs": [
+    "https://github.com/AsaSkrip"
+  ]
+}
+</script>
+
+<!-- Include the script that allows Netlify CMS login -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<!-- Include the website scripts -->
+<script src="/assets/js/scripts.min.js"></script>
+
+<!-- Include Google Analytics script -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+<script>
+  var host = window.location.hostname;
+  if (host != 'localhost') {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-XXXXXXXX-X');
+  }
+</script>
+  
+
+
+<!-- Include extra scripts -->
+
+
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "name": "Ajax和Node",
+            "headline": "众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。",
+            "description": "众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。",
+            "image": "https://img2.baidu.com/it/u=741352811,2667400721&fm=253&fmt=auto&app=138&f=PNG?w=812&h=500",
+            "url": "/candy-candies-candy/",
+            "articleBody": "1、http和https的区别
+
+答:
+  1.https协议需要到CA申请证书，一般免费证书较少，因而需要一定费用。
+  2.http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl/tls加密传输协议。
+  3.http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。
+  4.http的连接很简单，是无状态的；HTTPS协议是由SSL/TLS+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。
+
+
+
+
+2、get 和post的区别
+
+答: get
+			1. 在url后面拼接参数,只能以文本的形式传递数据
+			2. 传递的数据量小,4KB左右
+			3. 安全性低, 会将数据显示在地址栏
+			4. 速度快,通常用于安全性要求不高的请求
+			5. 会缓存数据
+	post
+		    1. 安全性比较高
+			2. 传递数据量大,请求对数据长度没有要求
+			3. 请求不会被缓存,也不会保留在浏览器历史记录里
+
+
+
+
+3、项目中遇到的状态码有哪些
+
+答: 200  请求成功,  2开头的异步表示请求成功
+		304  请求被允许,但请求内容没有改变, 3开头的一般请求完成
+		400  请求格式错误,  4开头的一般表示请求错误
+		404  请求的资源(网页)不存在,  
+		500  内部服务器错误,  5开头的一般都是指服务器错误
+
+
+
+
+4、jsonp的原理？以及优缺点
+
+答: 原理: 利用script标签的src属性具有天然可跨域的特性，由服务端返回一个预先定义好的Javascript函数的调用，并且将服务器数据以该函数参数的形式响应给浏览器.
+		优点: 完美解决在测试或者开发中获取不同域下的数据,用户传递一个callback参数给服务端，然后服务端返回数据时会将这个callback参数作为函数名来包裹住JSON数据，这样客户端就可以随意定制自己的函数来自动处理返回数据了。
+		缺点：Jsonp只支持get请求而不支持post 请求,也即是说如果想传给后台一个json 格式的数据,此时问题就来了, 浏览器会报一个http状态码41错误,告诉你请求格式不正确.
+
+
+
+
+5、什么是同源策略？怎么解决跨域问题
+
+答: 同源策略: 同源策略是浏览器的一种安全策略, 所谓同源是指域名、协议、端口完全相同，不同源则跨域。
+   解决跨域的方法: 
+			1. 通过jsonp跨域
+			2. 跨域资源共享（CORS  Access-Control-Allow-Origin: http://api.bob.com）
+			3. nginx代理跨域
+
+
+
+
+6、页面通信的方式有哪些
+
+答: 1. 通过url拼接地址
+	2. H5本地存储
+
+
+
+
+7、你对WebSocket了解哪些
+
+答: WebSocket 是HTML5一种新的协议。它实现了浏览器与服务器全双工通信，能更好的节省服务器资源和带宽并达到实时通讯，它建立在TCP之上，同HTTP一样通过TCP来传输数据，但是它和HTTP最大不同是：
+	1. WebSocket是一种双向通信协议，在建立连接后，WebSocket服务器和Browser/Client Agent都能主动的向对方发送或接收数据，就像Socket一样；
+	2. WebSocket需要类似TCP的客户端和服务器端通过握手连接连接成功后才能相互通信。
+
+
+
+
+8、如何清除浏览器的缓存
+
+答: 当我们请求的地址相同的时候，浏览器为了提高性能，会把相同地址的数据进行缓存。如果服务端的数据发生改变，客户端也不会更新，那就需要清除缓存
+    解决：在url后面加时间戳
+    例如：https://www.baidu.com?time=New Date()
+
+
+
+
+9、token的作用是什么
+
+答: token是服务端生成的“令牌”，来标识不同身份的
+    1. 防止表单重复提交
+    2.判断用户是否登录
+
+
+
+
+10、列举echarts常用的配置项，说明含义
+
+答:      图表标题 title
+		图例  legend
+		值域 dataRange
+		提示框 tooltip
+		区域缩放控制器 dataZoom
+		网格 grid
+		类目轴 categoryAxis
+		值型坐标轴默认参数 valueAxis
+		柱形图默认参数 bar
+		折线图默认参数 line
+		散点图默认参数 scatter
+		饼图默认参数 pie
+		默认标志图形类型列表 symbolList
+		可计算特性配置, 孤岛, 提示颜色 calculable
+
+
+
+
+11、git如何管理一个项目和git如何解决合并冲突
+
+1、git管理项目流程
+答: 1、git init初始化git仓库（新项目才有这一步）
+    2、git clone将远程仓库的项目资料下载下来
+    3、git checkout -b dev (dev 为本地分支名）
+    4、git add .将工作区文件存在暂存区
+    4、git commit -m  &quot;&quot;从暂存区存到仓储区
+    5、git checkout master切到master分支
+    6、git merge dev 合并分支,合并后要将分支删除
+    7、使用git push将其上传到远程仓库
+    8、第二上班，先pull一下，更新最新代码
+    
+2、git解决合并冲突
+答：冲突的原因：代码提交的时候，在当前行有新的代码要加入，就会出现冲突。例如：20行已经有代码了，但是合并的的代码20行也是有代码，这样就会出现冲突。
+	解决办法：如果是双方的代码是不同的业务，那就保留双方双方更改（vscode有提示）。如果是重复的业务逻辑，那就选择采用当前更改（vscode有提示）。
+
+
+
+
+12、介绍一下你们公司的开发流程（自己理解，形成自己的东西）
+
+答: （这是最基础的流程，自己理解，形成自己的东西）
+    1、项目确定下来后
+    2、先分配确定开发人员,然后产品会召集相关开发人员一起开一个项目分析会
+    3、接着就项目立项了,项目立项会形成一个prd,确定开发周期
+    4、然后就进入开发阶段了,在开发一段时间会进行前后端联调
+    5、功能完成后会先进行冒烟测试,检查是否有阻塞缺陷
+    6、开发全部结束就进入测试阶段
+    7、测试通过就可以上线了,上线之后会有一个回归测试，检查有没有影响以前的功能，保证全流程没有问题
+
+
+
+
+13、在地址栏输入网址，到数据返回的过程是什么？
+
+答:  1. 输入url地址后，首先进行DNS解析，将相应的域名解析为IP地址。
+     2. 根据IP地址去寻找相应的服务器。
+     3. 与服务器进行TCP的三次握手，建立连接。
+     4. 客户端发送请求，找到相应的资源库。
+     5. 客户端拿到数据，进行相应的渲染。
+
+
+
+
+14、原生 ajax 请求的步骤
+
+答：1.创建异步对象 var xhr = new XMLHttpRequest()
+    2.设置请求行  xhr.open()
+    3.设置请求头  xhr.setRequestHeader()   get请求没有请求头
+    4.设置请求体  xhr.send      get请求没有请求体,参数为null
+    5.监视异步对象的状态变化   xhr.onreadystatechange(){}
+
+
+
+
+15、什么是promise，特点是什么
+
+	首先，它是一个对象，也就是说与其他JavaScript对象的用法，没有什么两样；它使得异步操作具备同步操作的效果，使得程序具备正常的同步运行的流程，回调函数不必再一层层嵌套。
+	简单说，它的思想是，每一个异步任务立刻返回一个Promise对象，由于是立刻返回，所以可以采用同步操作的流程。这个Promises对象有一个then方法，允许指定回调函数，在异步任务完成后调用。
+    
+ 特点：
+    1、Promise对象只有三种状态。
+        异步操作“未完成”（pending）
+        异步操作“已完成”（resolved，又称fulfilled）
+        异步操作“失败”（rejected）
+        异步操作成功，Promise对象传回一个值，状态变为resolved。
+        异步操作失败，Promise对象抛出一个错误，状态变为rejected。
+    2、promise的回调是同步的，then是异步的
+    3、可以链式调用
+
+
+
+
+16、promise的方法有哪些，能说明其作用
+
+原型上的方法：
+1、Promise.prototype.then()
+	1）作用是为 Promise 实例添加状态改变时的回调函数。接受两个回调函数作为参数。第一个回调函数是Promise对象的状态变为resolved时调用，第二个回调函数是Promise对象的状态变为rejected时调用。其中，第二个函数是可选的，不一定要提供。
+    2）返回的是另一个Promise对象，后面还可以接着调用then方法。
+2、Promise.prototype.catch()
+	1）用于指定发生错误时的回调函数。
+    2）返回的也是一个 Promise 对象，因此还可以接着调用then方法
+3、Promise.prototype.finally()
+	1）finally方法用于指定不管 Promise 对象最后状态如何，都会执行的回调函数。
+    2）finally方法的回调函数不接受任何参数，这意味着没有办法知道，前面的 Promise 状态到底是fulfilled还是rejected。
+
+自身API:
+1、Promise.resolve()
+	1）不带参数传递 — 返回一个新的状态为resolve的promise对象
+    2）参数是一个 Promise 实例— 返回 当前的promise实例
+2、Promise.reject()
+	1)返回的是一个值
+    2）返回的值会传递到下一个then的resolve方法参数中
+3、Promise.all() 
+	1）并行执行异步操作的能力
+    2）所有异步操作执行完后才执行回调
+4、Promise.race()
+	1）那个结果返回来的快就是，那个结果，不管结果是成功还是失败
+
+
+
+
+17、async和await是干什么的
+
+1、async 用于申明一个 function 是异步的，而 await 用于等待一个异步方法执行完成。
+2、await 只能出现在 async 函数中。
+3、async 函数返回的是一个 Promise 对象，后面可以用then方法。
+
+
+
+
+18、怎么理解三次握手
+
+字段	      含义
+URG	   紧急指针是否有效。为1，表示某一位需要被优先处理
+ACK	   确认号是否有效，一般置为1。
+PSH	   提示接收端应用程序立即从TCP缓冲区把数据读走。
+RST	   对方要求重新建立连接，复位。
+SYN	   请求建立连接，并在其序列号的字段进行序列号的初始值设定。建立连接，设置为1
+FIN    希望断开连接。
+
+1、三次握手
+    第一次握手：建立连接时，客户端发送syn包到服务器，等待服务器确认。
+    第二次握手：服务器收到syn包，必须确认客户的SYN，同时自己也发送一个SYN包（syn=y）到客户端
+    第三次握手：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK，此包发送完毕，客户端和服务器进入（TCP连接成功）状态，完成三次握手
+   （通俗：主机1告诉主机2，我可以向你请求数据吗。主机2告诉主机1，可以请求数据。主机1告诉主机2，那我来请求数据了，请求完成，实现三次握手）
+
+
+
+
+19、怎么理解四次挥手
+
+1、四次挥手
+    第一次分手：主机1（可以使客户端，也可以是服务器端）向主机2发送一个FIN报文段；此时，主机1进入FIN_WAIT_1状态；这表示主机1没有数据要发送给主机2了。
+    第二次分手：主机2收到了主机1发送的FIN报文段，向主机1回一个ACK报文段，主机1进入FIN_WAIT_2状态；主机2告诉主机1，我“同意”你的关闭请求。
+    第三次分手：主机2向主机1发送FIN报文段，请求关闭连接，同时主机2进入LAST_ACK状态。
+    第四次分手：主机1收到主机2发送的FIN报文段，向主机2发送ACK报文段，然后主机1进入TIME_WAIT状态；主机2收到主机1的ACK报文段以后，就关闭连接；此时，主机1等待2MSL后依然没有收到回复，则证明Server端已正常关闭，那好，主机1也可以关闭连接了。
+    （通俗：主机1告诉主机2，我没有数据要发送了，希望断开连接。主机2接到请求后说，同意断开。主机2告诉主机1可以关闭连接了。主机1接到可以关闭的指令后，关闭连接，四次挥手完成）
+
+
+
+
+20、怎么理解事件循环机制
+
+	1、JavaScript 是一门单线程语言.单线程可能会出现阻塞的情况，所js分了同步任务和异步任务。
+    2、同步和异步任务分别进入不同的执行环境，同步的进入主线程，即主执行栈，异步的进入 Event Queue（事件队列） 。主线程内的任务执行完毕为空，会去 Event Queue 读取对应的任务，推入主线程执行。 上述过程的不断重复就是我们说的 Event Loop (事件循环)。
+
+
+",
+            "wordcount": "998",
+            "inLanguage": "en",
+            "dateCreated": "2018-04-21/",
+            "datePublished": "2018-04-21/",
+            "dateModified": "2018-04-21/",
+            "author": {
+                "@type": "Person",
+                "name": "李梓涵",
+                
+                "image": "/assets/img/uploads/profile.png",
+                
+                "jobTitle": "The One",
+                "url": "/authors/mranderson/",
+                "sameAs": [
+                    "https://github.com/AsaSkrip","https://www.facebook.com/facebook_username","https://twitter.com/twitter_username","https://medium.com/@medium_username","https://www.instagram.com/instagram_username","https://www.linkedin.com/in/linkedin_username"
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "李梓涵",
+                "url": "/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "/assets/img/blog-image.png",
+                    "width": "600",
+                    "height": "315"
+                }
+            },
+            "mainEntityOfPage": "True",
+            "genre": "Ajax和Node",
+            "articleSection": "Ajax和Node",
+            "keywords": ["food","tips"]
+        }
+        </script>
+    </body>
+</html>
